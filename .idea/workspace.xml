@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43c44579-761b-4e61-beed-c0616780da08" name="Changes" comment="" />
+    <list default="true" id="43c44579-761b-4e61-beed-c0616780da08" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,7 +33,7 @@
     </option>
   </component>
   <component name="ProjectId" id="2igL1VwWEyYVyvEw4t74KiRmuQJ" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -49,12 +51,15 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/soft/TortoiseSVN/bin/svn.exe",
+    "last_opened_file_path": "E:/Project/ziyan/lease",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
     "spring.configuration.checksum": "2f7f4053077a139c3fd214d4d2f47517",
     "vue.rearranger.settings.migration": "true"
@@ -85,6 +90,7 @@
       <workItem from="1719910859695" duration="5000" />
       <workItem from="1719910870094" duration="192000" />
       <workItem from="1719911150770" duration="651000" />
+      <workItem from="1719926960728" duration="136000" />
     </task>
     <servers />
   </component>
