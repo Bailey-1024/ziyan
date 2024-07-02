@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Maven: com.github.xiaoymin:knife4j-openapi3-ui:4.1.0" type="java-imported" external-system-id="Maven">
+    <properties groupId="com.github.xiaoymin" artifactId="knife4j-openapi3-ui" version="4.1.0" />
+    <CLASSES>
+      <root url="jar://D:/soft/maven/Repository/com/github/xiaoymin/knife4j-openapi3-ui/4.1.0/knife4j-openapi3-ui-4.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/soft/maven/Repository/com/github/xiaoymin/knife4j-openapi3-ui/4.1.0/knife4j-openapi3-ui-4.1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/soft/maven/Repository/com/github/xiaoymin/knife4j-openapi3-ui/4.1.0/knife4j-openapi3-ui-4.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
