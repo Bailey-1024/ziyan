@@ -1,0 +1,29 @@
+Index: lease/web/web-admin/src/main/resources/application.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>server:\r\n  port: 8080\r\n\r\nspring:\r\n  profiles:\r\n    active: test\r\n  datasource:\r\n    type: com.zaxxer.hikari.HikariDataSource\r\n    url: jdbc:mysql://localhost:3306/lease?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=GMT%2b8\r\n    username: root\r\n    password: root\r\n    hikari: #配置数据库连接池相关配置\r\n      connection-test-query: SELECT 1 # 自动检测连接\r\n      connection-timeout: 60000 #数据库连接超时时间,默认30秒\r\n      idle-timeout: 500000 #空闲连接存活最大时间，默认600000（10分钟）\r\n      max-lifetime: 540000 #此属性控制池中连接的最长生命周期，值0表示无限生命周期，默认1800000即30分钟\r\n      maximum-pool-size: 12 #连接池最大连接数，默认是10\r\n      minimum-idle: 10 #最小空闲连接数量\r\n      pool-name: SPHHikariPool # 连接池名称\r\n\r\n#用于打印框架生成的sql语句，便于调试\r\nmybatis-plus:\r\n  configuration:\r\n    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lease/web/web-admin/src/main/resources/application.yml b/lease/web/web-admin/src/main/resources/application.yml
+--- a/lease/web/web-admin/src/main/resources/application.yml	(revision a25f1410a286dccfbd513e2c5d4f1bfd39d0641f)
++++ b/lease/web/web-admin/src/main/resources/application.yml	(date 1719912710423)
+@@ -2,8 +2,6 @@
+   port: 8080
+ 
+ spring:
+-  profiles:
+-    active: test
+   datasource:
+     type: com.zaxxer.hikari.HikariDataSource
+     url: jdbc:mysql://localhost:3306/lease?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=GMT%2b8
+Index: lease/web/web-admin/src/main/resources/application-test.yml
+===================================================================
+diff --git a/lease/web/web-admin/src/main/resources/application-test.yml b/lease/web/web-admin/src/main/resources/application-test.yml
+deleted file mode 100644
+--- a/lease/web/web-admin/src/main/resources/application-test.yml	(revision a25f1410a286dccfbd513e2c5d4f1bfd39d0641f)
++++ /dev/null	(revision a25f1410a286dccfbd513e2c5d4f1bfd39d0641f)
+@@ -1,2 +0,0 @@
+-server:
+-  port: 8088
+\ No newline at end of file
