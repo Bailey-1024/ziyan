@@ -30,12 +30,19 @@ public class PaymentTypeController {
     @PostMapping("saveOrUpdate")
     public Result saveOrUpdatePaymentType(@RequestBody PaymentType paymentType) {
         paymentTypeService.saveOrUpdate(paymentType);
+
+//        if (paymentType.getId()==null||paymentType.getId().equals("")){
+//            paymentTypeService.save(paymentType);
+//        }else {
+//            paymentTypeService.updateById(paymentType);
+//        }
         return Result.ok();
     }
 
     @Operation(summary = "根据ID删除支付方式")
     @DeleteMapping("deleteById")
     public Result deletePaymentById(@RequestParam Long id) {
+        paymentTypeService.removeById(id);
         return Result.ok();
     }
 

@@ -29,7 +29,7 @@ public class BaseEntity implements Serializable {
     private Date updateTime;
 
     @Schema(description = "逻辑删除")
-    @TableField("is_deleted")
+    @TableField(value = "is_deleted",fill = FieldFill.INSERT)
     @JsonIgnore
     @TableLogic
     private Byte isDeleted;
