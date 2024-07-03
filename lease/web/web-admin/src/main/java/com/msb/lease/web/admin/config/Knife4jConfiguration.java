@@ -6,9 +6,15 @@ import org.springdoc.core.models.GroupedOpenApi;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+/**
+ * 接口文档配置类
+ */
 @Configuration
 public class Knife4jConfiguration {
-
+    /**
+     * 定义接口文档的总信息
+     * @return
+     */
     @Bean
     public OpenAPI customOpenAPI() {
 
@@ -19,6 +25,10 @@ public class Knife4jConfiguration {
                         .description("后台管理系统API"));
     }
 
+    /**
+     * 定义接口文档的各个分组信息
+     * @return
+     */
     @Bean
     public GroupedOpenApi systemAPI() {
 

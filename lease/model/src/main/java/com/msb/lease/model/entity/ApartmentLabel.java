@@ -6,6 +6,10 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Builder;
 import lombok.Data;
 
+/**
+ * @Schema(description = "公寓标签关联表")
+ * 声明属性类和属性的信息
+ */
 @Schema(description = "公寓标签关联表")
 @TableName(value = "apartment_label")
 @Data
