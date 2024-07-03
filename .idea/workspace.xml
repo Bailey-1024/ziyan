@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43c44579-761b-4e61-beed-c0616780da08" name="Changes" comment="完善配置类2" />
+    <list default="true" id="43c44579-761b-4e61-beed-c0616780da08" name="Changes" comment="完善配置类2">
+      <change afterPath="$PROJECT_DIR$/lease/common/src/main/java/com/msb/lease/common/mybatisplus/MybatisMetaObjectHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,9 +27,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="82905204-fd3d-497e-9028-97daa911b729" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -69,7 +69,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "MavenSettings",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "spring.configuration.checksum": "297dab0a4ad76dec048f3bf34df1bd51",
     "vue.rearranger.settings.migration": "true"
   }
@@ -107,7 +107,7 @@
       <workItem from="1719974460143" duration="371000" />
       <workItem from="1719991592064" duration="5666000" />
       <workItem from="1719999163147" duration="56000" />
-      <workItem from="1719999232894" duration="2870000" />
+      <workItem from="1719999232894" duration="3102000" />
     </task>
     <task id="LOCAL-00001" summary="完善配置类">
       <option name="closed" value="true" />
