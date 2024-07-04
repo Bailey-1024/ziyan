@@ -14,18 +14,15 @@
                 and user.name like concat('%',#{queryVo.name},'%')
             </if>
             <if test="queryVo.phone != null and queryVo.phone !=''">
-<<<<<<< HEAD
-                and user.phone =like concat('%',#{queryVo.name},'%')
-=======
                 and user.phone =like concat('%',#{queryVo.phone},'%')
->>>>>>> mzc
             </if>
         </where>
     </select>
+    <!--判断用户后台数据是否可用-->
     <select id="countByUsername" resultType="java.lang.Integer">
         select count(1) from system_user where username=#{username}
     </select>
-    <!--通过id修改用户信息-->
+    <!--通过id删除用户信息-->
     <update id="deleteByIdTo">
         update system_user set is_deleted=1 where id=#{id}
     </update>
