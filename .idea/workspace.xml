@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43c44579-761b-4e61-beed-c0616780da08" name="Changes" comment="完善配置类3">
+    <list default="true" id="43c44579-761b-4e61-beed-c0616780da08" name="Changes" comment="添加分页创建配置类 和自己写的代码">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/lease/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/AdminWebApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/AdminWebApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/target/classes/com/msb/lease/AdminWebApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/target/classes/com/msb/lease/AdminWebApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/target/classes/com/msb/lease/web/admin/custom/config/WebMvcConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/target/classes/com/msb/lease/web/admin/custom/config/WebMvcConfiguration.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lgy" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -59,7 +61,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Merging master",
+    "git-widget-placeholder": "mzc",
     "last_opened_file_path": "E:/Project/ziyan/lease",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -126,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1720001646286</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="添加分页创建配置类 和自己写的代码">
+      <created>1720064107043</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1720064107043</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,15 +156,20 @@
     <MESSAGE value="完善配置类" />
     <MESSAGE value="完善配置类2" />
     <MESSAGE value="完善配置类3" />
-    <option name="LAST_COMMIT_MESSAGE" value="完善配置类3" />
+    <MESSAGE value="添加分页创建配置类 和自己写的代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加分页创建配置类 和自己写的代码" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/controller/apartment/LabelController.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="2" />
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/SystemUserService.java</url>
+          <line>18</line>
+          <properties class="com.msb.lease.web.admin.service.SystemUserService" method="selectPage">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
