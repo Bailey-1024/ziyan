@@ -28,8 +28,8 @@ public class ViewAppointmentController {
     public Result<IPage<AppointmentVo>> page(@RequestParam long current, @RequestParam long size, AppointmentQueryVo queryVo) {
         //自定义sql分页查询
        IPage<AppointmentVo> page  = new Page<>(current, size);
-       IPage<AppointmentVo> avPage=service.selectAVPage(page,queryVo);
-        return Result.ok(avPage);
+       IPage<AppointmentVo> result=service.selectAVPage(page,queryVo);
+        return Result.ok(result);
     }
 
     @Operation(summary = "根据id更新预约状态")

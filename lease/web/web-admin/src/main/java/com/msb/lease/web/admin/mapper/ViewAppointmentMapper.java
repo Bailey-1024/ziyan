@@ -14,7 +14,7 @@ import com.msb.lease.web.admin.vo.appointment.AppointmentVo;
 * @Entity com.msb.lease.model.ViewAppointment
 */
 public interface ViewAppointmentMapper extends BaseMapper<ViewAppointment> {
-
+    //分页查询
     IPage<AppointmentVo> selectAVPage(IPage<AppointmentVo> page, AppointmentQueryVo queryVo);
 }
 
