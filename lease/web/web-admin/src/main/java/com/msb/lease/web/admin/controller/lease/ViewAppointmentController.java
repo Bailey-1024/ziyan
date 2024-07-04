@@ -25,6 +25,7 @@ public class ViewAppointmentController {
     @Operation(summary = "分页查询预约信息")
     @GetMapping("page")
     public Result<IPage<AppointmentVo>> page(@RequestParam long current, @RequestParam long size, AppointmentQueryVo queryVo) {
+
         return Result.ok();
     }
 
