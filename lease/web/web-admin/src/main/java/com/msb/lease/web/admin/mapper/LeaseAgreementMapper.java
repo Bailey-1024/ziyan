@@ -4,6 +4,8 @@ package com.msb.lease.web.admin.mapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.msb.lease.model.entity.LeaseAgreement;
+import com.msb.lease.web.admin.vo.agreement.AgreementQueryVo;
+import com.msb.lease.web.admin.vo.agreement.AgreementVo;
 
 /**
 * @author liubo
@@ -13,6 +15,8 @@ import com.msb.lease.model.entity.LeaseAgreement;
 */
 public interface LeaseAgreementMapper extends BaseMapper<LeaseAgreement> {
 
+    //分页查询
+    IPage<AgreementVo> selectLAPage(IPage<AgreementVo> page, AgreementQueryVo queryVo);
 }
 
 

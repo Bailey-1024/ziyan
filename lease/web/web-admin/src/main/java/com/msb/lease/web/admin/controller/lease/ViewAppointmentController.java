@@ -27,7 +27,9 @@ public class ViewAppointmentController {
     @GetMapping("page")
     public Result<IPage<AppointmentVo>> page(@RequestParam long current, @RequestParam long size, AppointmentQueryVo queryVo) {
         //自定义sql分页查询
+        //创建分页模板
        IPage<AppointmentVo> page  = new Page<>(current, size);
+       //调用service方法，查询数据
        IPage<AppointmentVo> result=service.selectAVPage(page,queryVo);
         return Result.ok(result);
     }

@@ -3,5 +3,94 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.msb.lease.web.admin.mapper.LeaseAgreementMapper">
-
+    <resultMap id="AgreementQueryVoMap" type="com.msb.lease.web.admin.vo.agreement.AgreementVo" autoMapping="true">
+        <id property="id" column="id"/>
+        <!--公寓信息-->
+        <association property="apartmentInfo" javaType="com.msb.lease.model.entity.ApartmentInfo" autoMapping="true">
+            <id property="id" column="ai_id"/>
+            <result property="name" column="ai_name" />
+        </association>
+        <!--房间信息-->
+        <association property="roomInfo" javaType="com.msb.lease.model.entity.RoomInfo" autoMapping="true">
+            <id property="id" column="ri_id"/>
+        </association>
+        <!--支付方式-->
+        <association property="paymentType" javaType="com.msb.lease.model.entity.PaymentType" autoMapping="true">
+            <id property="id" column="pt_id"/>
+            <result property="name" column="pt_name" />
+        </association>
+        <!--租赁期限-->
+        <association property="leaseTerm" javaType="com.msb.lease.model.entity.LeaseTerm" autoMapping="true">
+            <id property="id" column="lt_id"/>
+        </association>
+    </resultMap>
+    <select id="selectLAPage" resultMap="AgreementQueryVoMap">
+        SELECT
+        lg.id,
+        lg.name,
+        lg.phone,
+        lg.identification_number,
+        lg.room_id,
+        lg.lease_start_date,
+        lg.lease_end_date,
+        lg.lease_term_id,
+        lg.apartment_id,
+        lg.deposit,
+        lg.payment_type_id,
+        lg.status,
+        lg.source_type,
+        lg.additional_info,
+        ai.id AS ai_id,
+        ai.name AS ai_name,
+        ai.district_id,
+        ai.district_name,
+        ai.city_id,
+        ai.city_name,
+        ai.province_id,
+        ai.province_name,
+        ri.id AS ri_id,
+        ri.room_number,
+        ri.rent,
+        ri.apartment_id AS ri_apartment_id,
+        pt.id AS pt_id,
+        pt.name AS pt_name,
+        pt.pay_month_count,
+        lt.id AS lt_id,
+        lt.month_count,
+        lt.unit
+        FROM
+        lease_agreement lg
+        LEFT JOIN
+        apartment_info ai ON lg.apartment_id = ai.id AND ai.is_deleted = 0
+        LEFT JOIN
+        room_info ri ON lg.room_id = ri.id AND ri.is_deleted = 0
+        LEFT JOIN
+        payment_type pt ON lg.payment_type_id = pt.id AND pt.is_deleted = 0
+        LEFT JOIN
+        lease_term lt ON lg.lease_term_id = lt.id AND lt.is_deleted = 0
+        <where>
+            lg.is_deleted = 0
+            <if test="queryVo.provinceId != null">
+                and ai.province_id = #{queryVo.provinceId}
+            </if>
+            <if test="queryVo.cityId !=null">
+                and ai.city_id = #{queryVo.cityId}
+            </if>
+            <if test="queryVo.districtId !=null">
+                and ai.apartment_id = #{queryVo.districtId}
+            </if>
+            <if test="queryVo.apartmentId != null">
+                and lg.apartment_id = #{queryVo.apartmentId}
+            </if>
+            <if test="queryVo.roomNumber != null and queryVo.roomNumber!=''">
+                and ri.room_number like concat('%',#{queryVo.room_number},'%')
+            </if>
+            <if test="queryVo.name !=null and queryVo.name !=''">
+                and lg.name like concat('%',#{queryVo.name},'%')
+            </if>
+            <if test="queryVo.phone !=null and queryVo.phone !=''">
+                and lg.phone like concat('%',#{queryVo.phone},'%')
+            </if>
+        </where>
+    </select>
 </mapper>
