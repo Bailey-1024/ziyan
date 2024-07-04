@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43c44579-761b-4e61-beed-c0616780da08" name="Changes" comment="完善配置类3" />
+    <list default="true" id="43c44579-761b-4e61-beed-c0616780da08" name="Changes" comment="完善配置类3">
+      <change beforePath="$PROJECT_DIR$/lease/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lease/common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/controller/login/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/controller/login/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/mapper/SystemUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/mapper/SystemUserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/LoginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/impl/LoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/impl/LoginServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/resources/mapper/SystemUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/resources/mapper/SystemUserMapper.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,12 +71,17 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "spring.configuration.checksum": "297dab0a4ad76dec048f3bf34df1bd51",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="ReactorSettings">
