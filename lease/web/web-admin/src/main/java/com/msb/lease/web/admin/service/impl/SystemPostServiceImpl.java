@@ -7,6 +7,8 @@ import com.msb.lease.web.admin.service.SystemPostService;
 import com.msb.lease.web.admin.mapper.SystemPostMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * @author liubo
@@ -19,6 +21,7 @@ public class SystemPostServiceImpl extends ServiceImpl<SystemPostMapper, SystemP
     @Autowired
     private SystemPostMapper systemPostMapper;
 
+    //分页查询操作
     @Override
     public IPage<SystemPost> pageByPost(IPage<SystemPost> iPage) {
         //调用Mapper层的分页方法
@@ -26,6 +29,8 @@ public class SystemPostServiceImpl extends ServiceImpl<SystemPostMapper, SystemP
         return systemPostMapper.pageByPost(iPage);
     }
 
+    //通过id删除用户信息 其实是修改操作 开启事物
+    @Transactional(propagation = Propagation.REQUIRED)
     @Override
     public void updateByidTo(Long id) {
         //调用mapper层方法

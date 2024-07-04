@@ -35,11 +35,11 @@ public class SystemUserServiceImpl extends ServiceImpl<SystemUserMapper, SystemU
     //通过id查询后台用户信息
     @Override
     public SystemUserItemVo selectById(Long id) {
-//通过id查询系统用户信息
+        //通过id查询系统用户信息
         SystemUser systemUser = systemUserMapper.selectById(id);
-//通过岗位id查询岗位信息
+        //通过岗位id查询岗位信息
         SystemPost systemPost = systemPostMapper.selectById(systemUser.getPostId());
-//将systemUser对象存储到systemUserItemVo当中
+        //将systemUser对象存储到systemUserItemVo当中
         SystemUserItemVo systemUserItemVo = sel(systemUser);
         systemUserItemVo.setPostName(systemPost.getName());
         return systemUserItemVo;
@@ -53,16 +53,18 @@ public class SystemUserServiceImpl extends ServiceImpl<SystemUserMapper, SystemU
 
         return page;
     }
-     //通过id删除用户信息  开启事物 实际上是修改操作
-     @Transactional(propagation = Propagation.REQUIRED)
+
+    //通过id删除用户信息  开启事物 实际上是修改操作  开启事物要么成果要么三百
+    @Transactional(propagation = Propagation.REQUIRED)
     @Override
     public void deleteById(Long id) {
         systemUserMapper.deleteByIdTo(id);
     }
+
     //通过username查询用户总数
     @Override
     public Integer countByUsername(String username) {
-
+        //通过用户名查询总条数
         return systemUserMapper.countByUsername(username);
     }
 
@@ -70,21 +72,21 @@ public class SystemUserServiceImpl extends ServiceImpl<SystemUserMapper, SystemU
     //将systemUser对象存储到systemUserItemVo当中
     public SystemUserItemVo sel(SystemUser systemUser) {
         SystemUserItemVo systemUserItemVo = new SystemUserItemVo();
-//姓名
+        //姓名
         systemUserItemVo.setName(systemUser.getName());
-//密码
+        //密码
         systemUserItemVo.setPassword(systemUser.getPassword());
-//电话号码
+        //电话号码
         systemUserItemVo.setPhone(systemUser.getPhone());
-//用户名
+        //用户名
         systemUserItemVo.setUsername(systemUser.getUsername());
-//用户类型
+        //用户类型
         systemUserItemVo.setType(systemUser.getType());
-//头像地址
+        //头像地址
         systemUserItemVo.setAvatarUrl(systemUser.getAvatarUrl());
-//备注信息
+        //备注信息
         systemUserItemVo.setAdditionalInfo(systemUser.getAdditionalInfo());
-//岗位id
+        //岗位id
         systemUserItemVo.setPostId(systemUser.getPostId());
         return systemUserItemVo;
     }
