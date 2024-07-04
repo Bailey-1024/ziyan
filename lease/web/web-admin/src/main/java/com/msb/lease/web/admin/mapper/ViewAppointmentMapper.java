@@ -4,6 +4,8 @@ package com.msb.lease.web.admin.mapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.msb.lease.model.entity.ViewAppointment;
+import com.msb.lease.web.admin.vo.appointment.AppointmentQueryVo;
+import com.msb.lease.web.admin.vo.appointment.AppointmentVo;
 
 /**
 * @author liubo
@@ -12,7 +14,8 @@ import com.msb.lease.model.entity.ViewAppointment;
 * @Entity com.msb.lease.model.ViewAppointment
 */
 public interface ViewAppointmentMapper extends BaseMapper<ViewAppointment> {
-
+    //分页查询
+    IPage<AppointmentVo> selectAVPage(IPage<AppointmentVo> page, AppointmentQueryVo queryVo);
 }
 
 
