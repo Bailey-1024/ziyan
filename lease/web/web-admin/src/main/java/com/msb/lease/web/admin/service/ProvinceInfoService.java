@@ -3,6 +3,8 @@ package com.msb.lease.web.admin.service;
 import com.msb.lease.model.entity.ProvinceInfo;
 import com.baomidou.mybatisplus.extension.service.IService;
 
+import java.util.List;
+
 /**
 * @author liubo
 * @description 针对表【province_info】的数据库操作Service

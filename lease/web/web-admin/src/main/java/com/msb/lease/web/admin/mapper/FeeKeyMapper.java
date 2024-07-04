@@ -3,6 +3,7 @@ package com.msb.lease.web.admin.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.msb.lease.model.entity.FeeKey;
+import com.msb.lease.web.admin.vo.fee.FeeKeyVo;
 
 import java.util.List;
 
@@ -13,7 +14,11 @@ import java.util.List;
 * @Entity com.msb.lease.model.FeeKey
 */
 public interface FeeKeyMapper extends BaseMapper<FeeKey> {
-
+    /**
+     * 查询全部杂费名称和杂费值列表
+     * @return
+     */
+    List<FeeKeyVo> feeInfoList();
 }
 
 
