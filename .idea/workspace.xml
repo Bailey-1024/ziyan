@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
+
     <list default="true" id="cb8c9d31-69c8-4570-be9f-f126e3ca7fbf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/controller/system/SystemPostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/controller/system/SystemPostController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/mapper/SystemPostMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/mapper/SystemPostMapper.java" afterDir="false" />
@@ -12,11 +12,11 @@
       <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/impl/SystemPostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/impl/SystemPostServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/resources/mapper/SystemPostMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/resources/mapper/SystemPostMapper.xml" afterDir="false" />
-=======
+
     <list default="true" id="43c44579-761b-4e61-beed-c0616780da08" name="Changes" comment="完善配置类3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lease/web/web-admin/target/classes/com/msb/lease/web/admin/custom/config/StringToBaseEnumConverterFactory$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/target/classes/com/msb/lease/web/admin/custom/config/StringToBaseEnumConverterFactory$1.class" afterDir="false" />
->>>>>>> 8ee0def716336e07903ebdcd06f81790733646b3
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,12 +43,12 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-<<<<<<< HEAD
+
     "git-widget-placeholder": "mzc",
-=======
+
     "git-widget-placeholder": "master",
     "last_opened_file_path": "E:/Project/ziyan/lease",
->>>>>>> 8ee0def716336e07903ebdcd06f81790733646b3
+
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -74,10 +74,10 @@
       <created>1720085410847</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-<<<<<<< HEAD
+
       <updated>1720085410847</updated>
       <workItem from="1720085412104" duration="4701000" />
-=======
+
       <updated>1719907058882</updated>
       <workItem from="1719907060019" duration="3177000" />
       <workItem from="1719910859695" duration="5000" />
@@ -98,15 +98,15 @@
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
       <updated>1719997137656</updated>
->>>>>>> 8ee0def716336e07903ebdcd06f81790733646b3
+
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-<<<<<<< HEAD
-=======
+
+
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -147,5 +147,5 @@
       </breakpoints>
     </breakpoint-manager>
   </component>
->>>>>>> 8ee0def716336e07903ebdcd06f81790733646b3
+
 </project>
