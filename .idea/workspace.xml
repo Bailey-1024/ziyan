@@ -4,40 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <list default="true" id="43c44579-761b-4e61-beed-c0616780da08" name="Changes" comment="添加分页创建配置类 和自己写的代码" />
-=======
-    <list default="true" id="cb8c9d31-69c8-4570-be9f-f126e3ca7fbf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/controller/system/SystemPostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/controller/system/SystemPostController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/mapper/SystemPostMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/mapper/SystemPostMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/SystemPostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/SystemPostService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/impl/SystemPostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/impl/SystemPostServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/resources/mapper/SystemPostMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/resources/mapper/SystemPostMapper.xml" afterDir="false" />
->>>>>>> cffee4d30b3534838c3edb36aac286792c212ccb
-=======
-    <list default="true" id="43c44579-761b-4e61-beed-c0616780da08" name="Changes" comment="完善配置类3">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/target/classes/com/msb/lease/web/admin/custom/config/StringToBaseEnumConverterFactory$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/target/classes/com/msb/lease/web/admin/custom/config/StringToBaseEnumConverterFactory$1.class" afterDir="false" />
->>>>>>> 8ee0def716336e07903ebdcd06f81790733646b3
+    <list default="true" id="b6c1b4c2-3ebd-4c85-a84f-8ea73bf7b6ec" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/lease/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/lease/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lease/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lease/common/pom.xml" afterDir="false" />
     </list>
-<<<<<<< HEAD
->>>>>>> 38e4f84f8dd6b6e439d4f62c75b76df8acd8201e
-=======
-    <list default="true" id="43c44579-761b-4e61-beed-c0616780da08" name="Changes" comment="添加分页创建配置类 和自己写的代码">
-      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/controller/lease/LeaseAgreementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/controller/lease/LeaseAgreementController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/controller/lease/ViewAppointmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/controller/lease/ViewAppointmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/mapper/LeaseAgreementMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/mapper/LeaseAgreementMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/LeaseAgreementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/LeaseAgreementService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/impl/LeaseAgreementServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/impl/LeaseAgreementServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/resources/mapper/LeaseAgreementMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/resources/mapper/LeaseAgreementMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/resources/mapper/ViewAppointmentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/resources/mapper/ViewAppointmentMapper.xml" afterDir="false" />
-    </list>
->>>>>>> lgy
-=======
->>>>>>> cffee4d30b3534838c3edb36aac286792c212ccb
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,88 +16,30 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="2imAWaxbTTfhExb07vP3vV8QB3m" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="2imii2KMBCgCiHffCzf8gq37MPh" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
   </component>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;mzc&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Project/ziyan/lease&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;297dab0a4ad76dec048f3bf34df1bd51&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-=======
-=======
->>>>>>> lgy
-=======
->>>>>>> cffee4d30b3534838c3edb36aac286792c212ccb
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    "git-widget-placeholder": "mzc",
-=======
->>>>>>> cffee4d30b3534838c3edb36aac286792c212ccb
-    "git-widget-placeholder": "master",
-=======
-    "git-widget-placeholder": "mzc",
->>>>>>> lgy
-    "last_opened_file_path": "E:/Project/ziyan/lease",
->>>>>>> 8ee0def716336e07903ebdcd06f81790733646b3
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-<<<<<<< HEAD
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-<<<<<<< HEAD
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "spring.configuration.checksum": "297dab0a4ad76dec048f3bf34df1bd51",
     "vue.rearranger.settings.migration": "true"
->>>>>>> 38e4f84f8dd6b6e439d4f62c75b76df8acd8201e
-=======
-    "settings.editor.selected.configurable": "preferences.fileTypes",
-    "spring.configuration.checksum": "297dab0a4ad76dec048f3bf34df1bd51",
-    "vue.rearranger.settings.migration": "true"
->>>>>>> lgy
   }
 }]]></component>
-  <component name="ReactorSettings">
-    <option name="notificationShown" value="true" />
-  </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -135,13 +47,6 @@
       </set>
     </option>
   </component>
-=======
-    "settings.editor.selected.configurable": "preferences.fileTypes",
-    "spring.configuration.checksum": "2f7f4053077a139c3fd214d4d2f47517",
-    "vue.rearranger.settings.migration": "true"
-  }
-}]]></component>
->>>>>>> cffee4d30b3534838c3edb36aac286792c212ccb
   <component name="RunManager">
     <configuration name="AdminWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="web-admin" />
@@ -154,82 +59,16 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="cb8c9d31-69c8-4570-be9f-f126e3ca7fbf" name="Changes" comment="" />
-      <created>1720085410847</created>
+      <changelist id="b6c1b4c2-3ebd-4c85-a84f-8ea73bf7b6ec" name="Changes" comment="" />
+      <created>1720102281131</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-<<<<<<< HEAD
-      <updated>1720085410847</updated>
-      <workItem from="1720085412104" duration="4701000" />
-=======
-      <updated>1719907058882</updated>
-      <workItem from="1719907060019" duration="3177000" />
-      <workItem from="1719910859695" duration="5000" />
-      <workItem from="1719910870094" duration="192000" />
-      <workItem from="1719911150770" duration="651000" />
-      <workItem from="1719926960728" duration="463000" />
-      <workItem from="1719927446852" duration="81000" />
-      <workItem from="1719974460143" duration="371000" />
-      <workItem from="1719991592064" duration="5666000" />
-      <workItem from="1719999163147" duration="56000" />
-      <workItem from="1719999232894" duration="3102000" />
-      <workItem from="1720052040423" duration="2604000" />
-    </task>
-    <task id="LOCAL-00001" summary="完善配置类">
-      <option name="closed" value="true" />
-      <created>1719997137656</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1719997137656</updated>
->>>>>>> 8ee0def716336e07903ebdcd06f81790733646b3
+      <updated>1720102281131</updated>
+      <workItem from="1720102282404" duration="1328000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-<<<<<<< HEAD
-=======
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="master" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="完善配置类" />
-    <MESSAGE value="完善配置类2" />
-    <MESSAGE value="完善配置类3" />
-    <option name="LAST_COMMIT_MESSAGE" value="完善配置类3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/controller/apartment/LabelController.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
->>>>>>> 8ee0def716336e07903ebdcd06f81790733646b3
 </project>
