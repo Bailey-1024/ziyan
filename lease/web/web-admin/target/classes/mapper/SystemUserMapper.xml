@@ -3,6 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.msb.lease.web.admin.mapper.SystemUserMapper">
+   <!--分页条件查询-->
     <select id="selectUserPage" resultType="com.msb.lease.web.admin.vo.system.user.SystemUserItemVo">
         SELECT
         user.type,user.phone,user.avatar_url,user.additional_info,user.post_id,user.`status`,user.create_time,user.update_time,user.is_deleted,post.name
@@ -13,8 +14,19 @@
                 and user.name like concat('%',#{queryVo.name},'%')
             </if>
             <if test="queryVo.phone != null and queryVo.phone !=''">
+<<<<<<< HEAD
                 and user.phone =like concat('%',#{queryVo.name},'%')
+=======
+                and user.phone =like concat('%',#{queryVo.phone},'%')
+>>>>>>> mzc
             </if>
         </where>
     </select>
+    <select id="countByUsername" resultType="java.lang.Integer">
+        select count(1) from system_user where username=#{username}
+    </select>
+    <!--通过id修改用户信息-->
+    <update id="deleteByIdTo">
+        update system_user set is_deleted=1 where id=#{id}
+    </update>
 </mapper>

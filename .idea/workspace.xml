@@ -9,9 +9,25 @@
 =======
     <list default="true" id="43c44579-761b-4e61-beed-c0616780da08" name="Changes" comment="完善配置类3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/controller/login/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/controller/login/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/LoginService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/impl/LoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/impl/LoginServiceImpl.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/lease/model/src/main/java/com/msb/lease/model/entity/SystemUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/model/src/main/java/com/msb/lease/model/entity/SystemUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/controller/system/SystemUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/controller/system/SystemUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/mapper/SystemUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/mapper/SystemUserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/SystemUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/SystemUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/impl/SystemUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/impl/SystemUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/resources/mapper/SystemUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/resources/mapper/SystemUserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/target/classes/com/msb/lease/web/admin/controller/system/SystemUserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/target/classes/com/msb/lease/web/admin/controller/system/SystemUserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/target/classes/com/msb/lease/web/admin/custom/config/WebMvcConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/target/classes/com/msb/lease/web/admin/custom/config/WebMvcConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/target/classes/com/msb/lease/web/admin/mapper/SystemUserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/target/classes/com/msb/lease/web/admin/mapper/SystemUserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/target/classes/com/msb/lease/web/admin/service/SystemUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/target/classes/com/msb/lease/web/admin/service/SystemUserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/target/classes/com/msb/lease/web/admin/service/impl/SystemUserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/target/classes/com/msb/lease/web/admin/service/impl/SystemUserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/target/classes/mapper/SystemUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/target/classes/mapper/SystemUserMapper.xml" afterDir="false" />
+>>>>>>> mzc
     </list>
 >>>>>>> cj
     <option name="SHOW_DIALOG" value="false" />
@@ -89,8 +105,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+<<<<<<< HEAD
     "git-widget-placeholder": "cj",
     "last_opened_file_path": "E:/Project/ziyan/lease",
+=======
+    "git-widget-placeholder": "mzc",
+    "last_opened_file_path": "E:/enviroment/idea2023/crm",
+>>>>>>> mzc
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
