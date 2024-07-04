@@ -43,7 +43,7 @@
             and va.name like concat('%',#{queryVo.name},'%')
     </if>
     <if test="queryVo.phone !=null and queryVo.phone !=''">
-            and va.name like concat('%',#{queryVo.phone},'%')
+            and va.phone like concat('%',#{queryVo.phone},'%')
     </if>
     </where>
 </select>
