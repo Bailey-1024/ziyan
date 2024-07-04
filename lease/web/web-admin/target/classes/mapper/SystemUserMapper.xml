@@ -3,5 +3,18 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.msb.lease.web.admin.mapper.SystemUserMapper">
-
+    <select id="selectUserPage" resultType="com.msb.lease.web.admin.vo.system.user.SystemUserItemVo">
+        SELECT
+        user.type,user.phone,user.avatar_url,user.additional_info,user.post_id,user.`status`,user.create_time,user.update_time,user.is_deleted,post.name
+        from system_user user left join system_post post on post.id=user.post_id
+        <where>
+            user.is_deleted=0
+            <if test="queryVo.name != null and queryVo.name !=''">
+                and user.name like concat('%',#{queryVo.name},'%')
+            </if>
+            <if test="queryVo.phone != null and queryVo.phone !=''">
+                and user.phone =#{queryVo.phone}
+            </if>
+        </where>
+    </select>
 </mapper>

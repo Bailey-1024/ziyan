@@ -1,14 +1,17 @@
 package com.msb.lease.web.admin.controller.system;
 
 
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.msb.lease.common.result.Result;
 import com.msb.lease.model.entity.SystemUser;
 import com.msb.lease.model.enums.BaseStatus;
+import com.msb.lease.web.admin.service.SystemUserService;
 import com.msb.lease.web.admin.vo.system.user.SystemUserItemVo;
 import com.msb.lease.web.admin.vo.system.user.SystemUserQueryVo;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 
@@ -16,17 +19,24 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/admin/system/user")
 public class SystemUserController {
-
+@Autowired
+private SystemUserService userService;
     @Operation(summary = "根据条件分页查询后台用户列表")
     @GetMapping("page")
     public Result<IPage<SystemUserItemVo>> page(@RequestParam long current, @RequestParam long size, SystemUserQueryVo queryVo) {
-        return Result.ok();
+        //mybatsi的分页
+        IPage<SystemUser> iPage=new Page<>(current,size);
+        //调用Service层的方法
+        IPage<SystemUserItemVo> page = userService.selectPage(iPage, queryVo);
+        return Result.ok(page);
     }
 
     @Operation(summary = "根据ID查询后台用户信息")
     @GetMapping("getById")
     public Result<SystemUserItemVo> getById(@RequestParam Long id) {
-        return Result.ok();
+        //调用Service层的方法
+      SystemUserItemVo  systemUserItemVos=userService.selectById(id);
+        return Result.ok(systemUserItemVos);
     }
 
     @Operation(summary = "保存或更新后台用户信息")

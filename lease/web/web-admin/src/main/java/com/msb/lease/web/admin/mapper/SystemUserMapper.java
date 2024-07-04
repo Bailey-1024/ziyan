@@ -4,6 +4,8 @@ package com.msb.lease.web.admin.mapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.msb.lease.model.entity.SystemUser;
+import com.msb.lease.web.admin.vo.system.user.SystemUserItemVo;
+import com.msb.lease.web.admin.vo.system.user.SystemUserQueryVo;
 
 /**
 * @author liubo
@@ -12,6 +14,9 @@ import com.msb.lease.model.entity.SystemUser;
 * @Entity com.msb.lease.model.SystemUser
 */
 public interface SystemUserMapper extends BaseMapper<SystemUser> {
+
+    IPage<SystemUserItemVo> selectUserPage(IPage<SystemUser> iPage, SystemUserQueryVo queryVo);
+
 
 }
 
