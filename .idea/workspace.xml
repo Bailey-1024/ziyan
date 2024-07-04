@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43c44579-761b-4e61-beed-c0616780da08" name="Changes" comment="完善配置类3">
-      <change beforePath="$PROJECT_DIR$/lease/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lease/common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/controller/login/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/controller/login/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/mapper/SystemUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/mapper/SystemUserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/LoginService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/impl/LoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/impl/LoginServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/resources/mapper/SystemUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/resources/mapper/SystemUserMapper.xml" afterDir="false" />
-    </list>
+    <list default="true" id="43c44579-761b-4e61-beed-c0616780da08" name="Changes" comment="完善配置类3" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,7 +67,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "297dab0a4ad76dec048f3bf34df1bd51",
+    "spring.configuration.checksum": "140a995e1a15416de9d78d0f42e0e3b4",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -119,6 +111,7 @@
       <workItem from="1719999163147" duration="56000" />
       <workItem from="1719999232894" duration="3102000" />
       <workItem from="1720052040423" duration="1865000" />
+      <workItem from="1720099787521" duration="2145000" />
     </task>
     <task id="LOCAL-00001" summary="完善配置类">
       <option name="closed" value="true" />
@@ -147,7 +140,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="cj" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
