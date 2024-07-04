@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="43c44579-761b-4e61-beed-c0616780da08" name="Changes" comment="添加分页创建配置类 和自己写的代码" />
+=======
+    <list default="true" id="43c44579-761b-4e61-beed-c0616780da08" name="Changes" comment="完善配置类3">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/target/classes/com/msb/lease/web/admin/custom/config/StringToBaseEnumConverterFactory$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/target/classes/com/msb/lease/web/admin/custom/config/StringToBaseEnumConverterFactory$1.class" afterDir="false" />
+    </list>
+>>>>>>> 38e4f84f8dd6b6e439d4f62c75b76df8acd8201e
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,6 +54,7 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
@@ -69,6 +77,30 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;297dab0a4ad76dec048f3bf34df1bd51&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "E:/Project/ziyan/lease",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "spring.configuration.checksum": "297dab0a4ad76dec048f3bf34df1bd51",
+    "vue.rearranger.settings.migration": "true"
+>>>>>>> 38e4f84f8dd6b6e439d4f62c75b76df8acd8201e
   }
 }</component>
   <component name="ReactorSettings">
@@ -112,7 +144,7 @@
       <workItem from="1719991592064" duration="5666000" />
       <workItem from="1719999163147" duration="56000" />
       <workItem from="1719999232894" duration="3102000" />
-      <workItem from="1720052040423" duration="1865000" />
+      <workItem from="1720052040423" duration="2604000" />
     </task>
     <task id="LOCAL-00001" summary="完善配置类">
       <option name="closed" value="true" />
@@ -148,7 +180,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

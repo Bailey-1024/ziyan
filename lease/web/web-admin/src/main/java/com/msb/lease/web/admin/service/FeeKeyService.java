@@ -12,5 +12,9 @@ import java.util.List;
 * @createDate 2023-07-24 15:48:00
 */
 public interface FeeKeyService extends IService<FeeKey> {
-
+    /**
+     * 查询全部杂费名称和杂费值列表
+     * @return
+     */
+    List<FeeKeyVo> feeInfoList();
 }
