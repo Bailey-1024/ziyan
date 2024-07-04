@@ -3,5 +3,28 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.msb.lease.web.admin.mapper.FeeKeyMapper">
+    <resultMap id="BaseResultMap" type="com.msb.lease.web.admin.vo.fee.FeeKeyVo" >
+        <id  column="id" property="id"/>
+        <result column="key_name" property="name"/>
+        <collection property="feeValueList" ofType="com.msb.lease.model.entity.FeeValue">
+            <id column="value_id" property="id"/>
+            <result column="value_name" property="name"/>
+            <result column="value_unit" property="unit"/>
+            <result column="key_id" property="feeKeyId"/>
+        </collection>
+    </resultMap>
 
+    <select id="feeInfoList" resultMap="BaseResultMap">
+        select fk.id,
+               fk.name key_name,
+               fv.id value_id,
+               fv.name value_name,
+               fv.unit value_unit,
+               fv.fee_key_id key_id
+        from fee_key fk
+                 left join
+             fee_value fv
+             on fk.id = fv.fee_key_id and fv.is_deleted = 0
+        where fk.is_deleted = 0
+    </select>
 </mapper>
