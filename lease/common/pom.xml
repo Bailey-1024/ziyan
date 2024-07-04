@@ -35,6 +35,12 @@
             <artifactId>lombok</artifactId>
             <version>1.18.30</version>
         </dependency>
+
+        <!--验证码生成工具-->
+        <dependency>
+            <groupId>com.github.whvcse</groupId>
+            <artifactId>easy-captcha</artifactId>
+        </dependency>
         <!--redis依赖-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
