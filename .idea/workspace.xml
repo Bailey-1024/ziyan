@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="43c44579-761b-4e61-beed-c0616780da08" name="Changes" comment="完善配置类3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/lease/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/target/classes/com/msb/lease/web/admin/custom/config/StringToBaseEnumConverterFactory$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/target/classes/com/msb/lease/web/admin/custom/config/StringToBaseEnumConverterFactory$1.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +59,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Merging master",
+    "git-widget-placeholder": "master",
     "last_opened_file_path": "E:/Project/ziyan/lease",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -108,7 +108,7 @@
       <workItem from="1719991592064" duration="5666000" />
       <workItem from="1719999163147" duration="56000" />
       <workItem from="1719999232894" duration="3102000" />
-      <workItem from="1720052040423" duration="1865000" />
+      <workItem from="1720052040423" duration="2604000" />
     </task>
     <task id="LOCAL-00001" summary="完善配置类">
       <option name="closed" value="true" />
@@ -137,7 +137,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
