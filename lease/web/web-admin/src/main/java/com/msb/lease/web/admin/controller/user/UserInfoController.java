@@ -49,7 +49,7 @@ public class UserInfoController {
         updateWrapper.eq(UserInfo::getId,id);
         //设置状态值
         updateWrapper.set(UserInfo::getStatus,status);
-
+        userInfoService.update(updateWrapper);
         return Result.ok();
     }
 }
