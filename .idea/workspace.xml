@@ -6,12 +6,24 @@
   <component name="ChangeListManager">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <list default="true" id="43c44579-761b-4e61-beed-c0616780da08" name="Changes" comment="添加分页创建配置类 和自己写的代码" />
+=======
+    <list default="true" id="cb8c9d31-69c8-4570-be9f-f126e3ca7fbf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/controller/system/SystemPostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/controller/system/SystemPostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/mapper/SystemPostMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/mapper/SystemPostMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/SystemPostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/SystemPostService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/impl/SystemPostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/impl/SystemPostServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/resources/mapper/SystemPostMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/resources/mapper/SystemPostMapper.xml" afterDir="false" />
+>>>>>>> cffee4d30b3534838c3edb36aac286792c212ccb
 =======
     <list default="true" id="43c44579-761b-4e61-beed-c0616780da08" name="Changes" comment="完善配置类3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lease/web/web-admin/target/classes/com/msb/lease/web/admin/custom/config/StringToBaseEnumConverterFactory$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/target/classes/com/msb/lease/web/admin/custom/config/StringToBaseEnumConverterFactory$1.class" afterDir="false" />
+>>>>>>> 8ee0def716336e07903ebdcd06f81790733646b3
     </list>
+<<<<<<< HEAD
 >>>>>>> 38e4f84f8dd6b6e439d4f62c75b76df8acd8201e
 =======
     <list default="true" id="43c44579-761b-4e61-beed-c0616780da08" name="Changes" comment="添加分页创建配置类 和自己写的代码">
@@ -24,48 +36,25 @@
       <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/resources/mapper/ViewAppointmentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/resources/mapper/ViewAppointmentMapper.xml" afterDir="false" />
     </list>
 >>>>>>> lgy
+=======
+>>>>>>> cffee4d30b3534838c3edb36aac286792c212ccb
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="lgy" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="localRepository" value="D:\repostory\lib-orther" />
-        <option name="mavenHome" value="$PROJECT_DIR$/../../configuration/apache-maven-3.9.6" />
-        <option name="userSettingsFile" value="D:\configuration\apache-maven-3.9.6\conf\settings.xml" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 3
-}</component>
-  <component name="ProjectId" id="2igL1VwWEyYVyvEw4t74KiRmuQJ" />
+  <component name="ProjectId" id="2imAWaxbTTfhExb07vP3vV8QB3m" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
-    <option name="showVisibilityIcons" value="true" />
   </component>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   <component name="PropertiesComponent">{
@@ -93,6 +82,8 @@
 =======
 =======
 >>>>>>> lgy
+=======
+>>>>>>> cffee4d30b3534838c3edb36aac286792c212ccb
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RequestMappingsPanelOrder0": "0",
@@ -103,16 +94,22 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    "git-widget-placeholder": "mzc",
+=======
+>>>>>>> cffee4d30b3534838c3edb36aac286792c212ccb
     "git-widget-placeholder": "master",
 =======
     "git-widget-placeholder": "mzc",
 >>>>>>> lgy
     "last_opened_file_path": "E:/Project/ziyan/lease",
+>>>>>>> 8ee0def716336e07903ebdcd06f81790733646b3
     "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+<<<<<<< HEAD
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -138,6 +135,13 @@
       </set>
     </option>
   </component>
+=======
+    "settings.editor.selected.configurable": "preferences.fileTypes",
+    "spring.configuration.checksum": "2f7f4053077a139c3fd214d4d2f47517",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+>>>>>>> cffee4d30b3534838c3edb36aac286792c212ccb
   <component name="RunManager">
     <configuration name="AdminWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="web-admin" />
@@ -148,16 +152,16 @@
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="SvnConfiguration">
-    <configuration>C:\Users\li\AppData\Roaming\Subversion</configuration>
-    <option name="runUnderTerminal" value="true" />
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="43c44579-761b-4e61-beed-c0616780da08" name="Changes" comment="" />
-      <created>1719907058882</created>
+      <changelist id="cb8c9d31-69c8-4570-be9f-f126e3ca7fbf" name="Changes" comment="" />
+      <created>1720085410847</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< HEAD
+      <updated>1720085410847</updated>
+      <workItem from="1720085412104" duration="4701000" />
+=======
       <updated>1719907058882</updated>
       <workItem from="1719907060019" duration="3177000" />
       <workItem from="1719910859695" duration="5000" />
@@ -178,28 +182,15 @@
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
       <updated>1719997137656</updated>
+>>>>>>> 8ee0def716336e07903ebdcd06f81790733646b3
     </task>
-    <task id="LOCAL-00002" summary="完善配置类2">
-      <option name="closed" value="true" />
-      <created>1720001646286</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1720001646286</updated>
-    </task>
-    <task id="LOCAL-00003" summary="添加分页创建配置类 和自己写的代码">
-      <created>1720064107043</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1720064107043</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+<<<<<<< HEAD
+=======
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -227,22 +218,18 @@
     <MESSAGE value="完善配置类" />
     <MESSAGE value="完善配置类2" />
     <MESSAGE value="完善配置类3" />
-    <MESSAGE value="添加分页创建配置类 和自己写的代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加分页创建配置类 和自己写的代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善配置类3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/SystemUserService.java</url>
-          <line>18</line>
-          <properties class="com.msb.lease.web.admin.service.SystemUserService" method="selectPage">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="3" />
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/controller/apartment/LabelController.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
+>>>>>>> 8ee0def716336e07903ebdcd06f81790733646b3
 </project>

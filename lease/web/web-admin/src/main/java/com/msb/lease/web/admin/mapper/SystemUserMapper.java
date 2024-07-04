@@ -14,10 +14,13 @@ import com.msb.lease.web.admin.vo.system.user.SystemUserQueryVo;
 * @Entity com.msb.lease.model.SystemUser
 */
 public interface SystemUserMapper extends BaseMapper<SystemUser> {
-
+   //条件分页查询
     IPage<SystemUserItemVo> selectUserPage(IPage<SystemUser> iPage, SystemUserQueryVo queryVo);
 
-
+   //删除用户信息
+    void deleteByIdTo(Long id);
+  // 通过username查询用户总数
+    Integer countByUsername(String username);
 }
 
 

@@ -7,20 +7,22 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@EnableConfigurationProperties(MinioConfiguration.class)  //开启属性绑定
+@EnableConfigurationProperties(MinioProperties.class)  //开启属性绑定
 public class MinioConfiguration {
     @Resource
     private MinioProperties minioProperties;
 
     /**
-     * 构建minio客户端连接对象
+     * 构建minio客户端对象
      * @return
      */
     @Bean
     public MinioClient minioClient(){
         return MinioClient
                 .builder()
+                //添加端点，用于访问存储桶和对象
                 .endpoint(minioProperties.getEndpoint())
+                //添加凭证--用户名和密码
                 .credentials(minioProperties.getAccessKey(), minioProperties.getSecretKey())
                 .build();
     }
