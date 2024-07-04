@@ -20,7 +20,7 @@ public class ViewAppointmentServiceImpl extends ServiceImpl<ViewAppointmentMappe
         implements ViewAppointmentService {
     @Resource
     private ViewAppointmentMapper mapper;
-
+    //分页查询
     @Override
     public IPage<AppointmentVo> selectAVPage(IPage<AppointmentVo> page, AppointmentQueryVo queryVo) {
         return mapper.selectAVPage(page,queryVo);

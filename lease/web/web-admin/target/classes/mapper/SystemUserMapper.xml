@@ -13,7 +13,7 @@
                 and user.name like concat('%',#{queryVo.name},'%')
             </if>
             <if test="queryVo.phone != null and queryVo.phone !=''">
-                and user.phone =#{queryVo.phone}
+                and user.phone =like concat('%',#{queryVo.name},'%')
             </if>
         </where>
     </select>
