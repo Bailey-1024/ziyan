@@ -9,8 +9,15 @@ import com.msb.lease.web.admin.service.SystemUserService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.msb.lease.web.admin.vo.system.user.SystemUserItemVo;
 import com.msb.lease.web.admin.vo.system.user.SystemUserQueryVo;
+import org.apache.commons.codec.digest.DigestUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.Date;
+
+import static com.msb.lease.model.enums.BaseStatus.ENABLE;
 
 /**
  * @author liubo
@@ -45,6 +52,18 @@ public class SystemUserServiceImpl extends ServiceImpl<SystemUserMapper, SystemU
         IPage<SystemUserItemVo> page = systemUserMapper.selectUserPage(iPage, queryVo);
 
         return page;
+    }
+     //通过id删除用户信息  开启事物 实际上是修改操作
+     @Transactional(propagation = Propagation.REQUIRED)
+    @Override
+    public void deleteById(Long id) {
+        systemUserMapper.deleteByIdTo(id);
+    }
+    //通过username查询用户总数
+    @Override
+    public Integer countByUsername(String username) {
+
+        return systemUserMapper.countByUsername(username);
     }
 
 

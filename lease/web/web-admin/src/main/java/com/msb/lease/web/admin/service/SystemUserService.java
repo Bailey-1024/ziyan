@@ -17,4 +17,9 @@ public interface SystemUserService extends IService<SystemUser> {
     SystemUserItemVo selectById(Long id);
     //根据条件分页查询后台用户列表
     IPage<SystemUserItemVo> selectPage(IPage<SystemUser> iPage, SystemUserQueryVo queryVo);
+
+    //通过id删除用户信息
+    void deleteById(Long id);
+    // 通过username查询用户总数
+    Integer countByUsername(String username);
 }
