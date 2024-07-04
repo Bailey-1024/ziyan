@@ -2,6 +2,7 @@ package com.msb.lease.web.admin.controller.lease;
 
 
 import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.msb.lease.common.result.Result;
 import com.msb.lease.model.entity.ViewAppointment;
 import com.msb.lease.model.enums.AppointmentStatus;
@@ -25,7 +26,10 @@ public class ViewAppointmentController {
     @Operation(summary = "分页查询预约信息")
     @GetMapping("page")
     public Result<IPage<AppointmentVo>> page(@RequestParam long current, @RequestParam long size, AppointmentQueryVo queryVo) {
-        return Result.ok();
+        //自定义sql分页查询
+       IPage<AppointmentVo> page  = new Page<>(current, size);
+       IPage<AppointmentVo> avPage=service.selectAVPage(page,queryVo);
+        return Result.ok(avPage);
     }
 
     @Operation(summary = "根据id更新预约状态")

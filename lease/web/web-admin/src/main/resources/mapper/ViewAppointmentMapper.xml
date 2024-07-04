@@ -4,4 +4,18 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.msb.lease.web.admin.mapper.ViewAppointmentMapper">
 
+<select id="selectAVPage" resultType="com.msb.lease.web.admin.vo.appointment.AppointmentQueryVo">
+    select  va.name,
+            va.phone,
+            va.appointment_time,
+            va.additional_info,
+            va.appointment_status,
+            ai.province_name,
+            ai.city_name,
+            ai.district_name,
+            ai.name
+    from view_appointment va
+    join apartment_info ai on (ai.id=va.apartment_id)
+
+</select>
 </mapper>
