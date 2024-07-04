@@ -29,6 +29,7 @@ mybatis-plus:
       logic-not-delete-value: 0 # 逻辑未删除值(默认为 0)
 
 #配置对象存储服务器MinIO
+#自定义参数
 minio:
   endpoint: http://192.168.170.139:9000
   access-key: minioadmin
