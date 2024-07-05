@@ -85,7 +85,9 @@ public class LoginServiceImpl implements LoginService {
 
     @Override
     public SystemUserInfoVo getLoginUserInfo(Long userId) {
+        //根据用户id查找用户
         SystemUser systemUser = systemUserMapper.selectById(userId);
+        //new一个实体，将跟新实体信息
         SystemUserInfoVo systemUserInfoVo = new SystemUserInfoVo();
         systemUserInfoVo.setName(systemUser.getName());
         systemUserInfoVo.setAvatarUrl(systemUser.getAvatarUrl());

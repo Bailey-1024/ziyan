@@ -11,7 +11,7 @@ import java.util.Date;
 public class JwtUtil {
 
     //设置token到期时间
-    private static long tokenExpiration = 60 * 60 * 360 * 1000L;
+    private static long tokenExpiration = 60 * 60 * 24 * 360 * 1000L;
     //token码
     private static SecretKey secretKey =
             Keys.hmacShaKeyFor("CJMZCYKLGYfkxqsV50kankanshili666".getBytes());
@@ -19,27 +19,31 @@ public class JwtUtil {
     public static String createToken(Long userId, String username) {
         String token = Jwts.builder().
                 setSubject("USER_INFO").//项目名
-                setExpiration(new Date(System.currentTimeMillis() + tokenExpiration)).//到期时间
-                claim("userID", userId).//id
-                claim("username", username).//姓名
-                signWith(secretKey).//签名，token
-                compact();//？？？
+                        setExpiration(new Date(System.currentTimeMillis() + tokenExpiration)).//到期时间
+                        claim("userId", userId).//id
+                        claim("username", username).//姓名
+                        signWith(secretKey).//签名，token
+                        compact();//？？？
         return token;
     }
 
-    public static Claims parseToken(String token){
-        if(token == null){
+    public static Claims parseToken(String token) {
+        if (token == null) {
             throw new LeaseException(ResultCodeEnum.ADMIN_LOGIN_AUTH);
         }
 
         try {
             JwtParser jwtParser =
                     Jwts.parserBuilder().setSigningKey(secretKey).build();
-            return jwtParser.parseClaimsJwt(token).getBody();
-        }catch (ExpiredJwtException e){
+            return jwtParser.parseClaimsJws(token).getBody();
+        } catch (ExpiredJwtException e) {
             throw new LeaseException(ResultCodeEnum.TOKEN_EXPIRED);
-        }catch (JwtException e){
+        } catch (JwtException e) {
             throw new LeaseException(ResultCodeEnum.TOKEN_INVALID);
         }
+    }
+
+    public static void main(String[] args) {
+        System.out.println(createToken(2L, "user"));
     }
 }
