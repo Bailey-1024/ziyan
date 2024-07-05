@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="a29382aa-d2b0-4533-a77a-eae58f4d44f6" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/schedule/ScheduledTask.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/utils/PhoneUtil.java" afterDir="false" />
@@ -164,6 +165,13 @@
       <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/resources/mapper/SystemUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/resources/mapper/SystemUserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lease/web/web-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-app/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/Main.java" beforeDir="false" />
+=======
+    <list default="true" id="d165b998-ccdb-4d52-a6bd-020c95fa28cf" name="Changes" comment="llll">
+      <change beforePath="$PROJECT_DIR$/lease/common/src/main/java/com/msb/lease/common/utiles/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/common/src/main/java/com/msb/lease/common/utiles/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/intercepotor/AuthenticationInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/intercepotor/AuthenticationInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/impl/LoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/impl/LoginServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/resources/application.yml" afterDir="false" />
+>>>>>>> cj
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,6 +179,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2io51IvwGNaH5piXhFec9L58oSB" />
@@ -188,10 +201,14 @@
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
+<<<<<<< HEAD
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "Merging master",
+=======
+    "git-widget-placeholder": "cj",
+>>>>>>> cj
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -201,7 +218,14 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Spring Boot.AdminWebApplication">
+=======
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RunManager" selected="Application.JwtUtil">
+>>>>>>> cj
     <configuration name="JwtUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.msb.lease.common.utiles.JwtUtil" />
       <module name="common" />
@@ -215,6 +239,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="AdminWebApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="web-app" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.msb.lease.AdminWebApplication" />
@@ -231,18 +256,29 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+=======
+    <configuration name="AdminWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="web-admin" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.msb.lease.AdminWebApplication" />
+>>>>>>> cj
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="Spring Boot.AdminWebApplication" />
+=======
+>>>>>>> cj
         <item itemvalue="Application.JwtUtil" />
       </list>
     </recent_temporary>
   </component>
+<<<<<<< HEAD
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+=======
+>>>>>>> cj
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="a29382aa-d2b0-4533-a77a-eae58f4d44f6" name="Changes" comment="" />
@@ -264,6 +300,17 @@
           <properties class="org.springframework.beans.factory.BeanCreationException" package="org.springframework.beans.factory" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/lease/common/src/main/java/com/msb/lease/common/utiles/JwtUtil.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

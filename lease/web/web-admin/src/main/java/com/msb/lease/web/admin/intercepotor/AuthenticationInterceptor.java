@@ -14,8 +14,13 @@ public class AuthenticationInterceptor implements HandlerInterceptor {
     //前端登陆后，后端请求将jWt放到http的header中，header的key未access-tocken
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
+<<<<<<< HEAD
         String token = request.getHeader("access-tocken");
         //解释token
+=======
+        String token = request.getHeader("access-token");
+
+>>>>>>> cj
         Claims claims = JwtUtil.parseToken(token);
         //得到id
         Long userId = claims.get("userId",Long.class);
