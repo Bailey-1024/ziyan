@@ -5,6 +5,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.msb.lease.model.entity.ApartmentInfo;
+import com.msb.lease.web.admin.vo.apartment.ApartmentSubmitVo;
 
 /**
 * @author liubo
@@ -13,7 +14,11 @@ import com.msb.lease.model.entity.ApartmentInfo;
 * @Entity com.msb.lease.model.ApartmentInfo
 */
 public interface ApartmentInfoMapper extends BaseMapper<ApartmentInfo> {
-
+    /**
+     * 保存或者更新公寓信息
+     * @param apartmentSubmitVo
+     */
+    void saveOrUpdateApartment(ApartmentSubmitVo apartmentSubmitVo);
 }
 
 
