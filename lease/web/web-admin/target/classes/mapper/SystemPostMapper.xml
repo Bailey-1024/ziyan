@@ -9,6 +9,6 @@
     </update>
     <!--分页查询-->
     <select id="pageByPost" resultType="com.msb.lease.model.entity.SystemPost">
-        select  * from system_post where is_deleted=0
+        SELECT id,code postCode,name,description,`status`,create_time,update_time FROM system_post where is_deleted=0
     </select>
 </mapper>
