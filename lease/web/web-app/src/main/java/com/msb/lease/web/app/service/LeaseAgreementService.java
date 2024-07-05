@@ -2,6 +2,7 @@ package com.msb.lease.web.app.service;
 
 import com.msb.lease.model.entity.LeaseAgreement;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.msb.lease.web.app.vo.agreement.AgreementDetailVo;
 
 /**
 * @author liubo
@@ -9,4 +10,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
 * @createDate 2023-07-26 11:12:39
 */
 public interface LeaseAgreementService extends IService<LeaseAgreement> {
+    //通过id查询租约详细信息
+    AgreementDetailVo getDetailById(Long id);
 }

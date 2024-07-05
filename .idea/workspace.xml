@@ -4,174 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="a29382aa-d2b0-4533-a77a-eae58f4d44f6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/schedule/ScheduledTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/utils/PhoneUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/AdminWebApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/controller/agreement/LeaseAgreementController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/controller/apartment/ApartmentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/controller/appointment/ViewAppointmentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/controller/history/BrowsingHistoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/controller/leasaterm/LeaseTermController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/controller/login/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/controller/payment/PaymentTypeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/controller/region/RegionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/controller/room/RoomController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/custom/config/Knife4jConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/mapper/ApartmentFacilityMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/mapper/ApartmentFeeValueMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/mapper/ApartmentInfoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/mapper/ApartmentLabelMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/mapper/AttrKeyMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/mapper/AttrValueMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/mapper/BrowsingHistoryMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/mapper/CityInfoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/mapper/DistrictInfoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/mapper/FacilityInfoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/mapper/FeeKeyMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/mapper/FeeValueMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/mapper/GraphInfoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/mapper/LabelInfoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/mapper/LeaseAgreementMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/mapper/LeaseTermMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/mapper/PaymentTypeMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/mapper/ProvinceInfoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/mapper/RoomAttrValueMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/mapper/RoomFacilityMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/mapper/RoomInfoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/mapper/RoomLabelMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/mapper/RoomLeaseTermMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/mapper/RoomPaymentTypeMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/mapper/UserInfoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/mapper/ViewAppointmentMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/ApartmentFacilityService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/ApartmentFeeValueService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/ApartmentInfoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/ApartmentLabelService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/AttrKeyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/AttrValueService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/BrowsingHistoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/CityInfoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/DistrictInfoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/FacilityInfoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/FeeKeyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/FeeValueService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/GraphInfoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/LabelInfoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/LeaseAgreementService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/LeaseTermService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/LoginService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/PaymentTypeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/ProvinceInfoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/RoomAttrValueService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/RoomFacilityService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/RoomInfoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/RoomLabelService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/RoomLeaseTermService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/RoomPaymentTypeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/SmsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/UserInfoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/ViewAppointmentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/impl/ApartmentFacilityServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/impl/ApartmentFeeValueServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/impl/ApartmentInfoServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/impl/ApartmentLabelServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/impl/AttrKeyServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/impl/AttrValueServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/impl/BrowsingHistoryServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/impl/CityInfoServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/impl/DistrictInfoServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/impl/FacilityInfoServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/impl/FeeKeyServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/impl/FeeValueServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/impl/GraphInfoServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/impl/LabelInfoServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/impl/LeaseAgreementServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/impl/LeaseTermServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/impl/LoginServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/impl/PaymentTypeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/impl/ProvinceInfoServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/impl/RoomAttrValueServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/impl/RoomFacilityServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/impl/RoomInfoServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/impl/RoomLabelServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/impl/RoomLeaseTermServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/impl/RoomPaymentTypeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/impl/SmsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/impl/UserInfoServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/impl/ViewAppointmentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/vo/agreement/AgreementDetailVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/vo/agreement/AgreementItemVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/vo/apartment/ApartmentDetailVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/vo/apartment/ApartmentItemVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/vo/appointment/AppointmentDetailVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/vo/appointment/AppointmentItemVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/vo/attr/AttrKeyVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/vo/attr/AttrValueVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/vo/fee/FeeKeyVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/vo/fee/FeeValueVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/vo/graph/GraphVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/vo/history/HistoryItemVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/vo/room/RoomDetailVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/vo/room/RoomItemVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/vo/room/RoomQueryVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/vo/user/LoginVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/vo/user/UserInfoVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/vo/user/UserSubmitVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/resources/mapper/ApartmentFacilityMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/resources/mapper/ApartmentFeeValueMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/resources/mapper/ApartmentInfoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/resources/mapper/ApartmentLabelMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/resources/mapper/AttrKeyMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/resources/mapper/AttrValueMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/resources/mapper/BrowsingHistoryMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/resources/mapper/CityInfoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/resources/mapper/DistrictInfoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/resources/mapper/FacilityInfoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/resources/mapper/FeeKeyMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/resources/mapper/FeeValueMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/resources/mapper/GraphInfoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/resources/mapper/LabelInfoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/resources/mapper/LeaseAgreementMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/resources/mapper/LeaseTermMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/resources/mapper/PaymentTypeMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/resources/mapper/ProvinceInfoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/resources/mapper/RoomAttrValueMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/resources/mapper/RoomFacilityMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/resources/mapper/RoomInfoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/resources/mapper/RoomLabelMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/resources/mapper/RoomLeaseTermMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/resources/mapper/RoomPaymentTypeMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/resources/mapper/UserInfoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/resources/mapper/ViewAppointmentMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lease/common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/common/src/main/java/com/msb/lease/common/minio/MinioConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/common/src/main/java/com/msb/lease/common/minio/MinioConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/model/src/main/java/com/msb/lease/model/entity/ApartmentFacility.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/model/src/main/java/com/msb/lease/model/entity/ApartmentFacility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/model/src/main/java/com/msb/lease/model/entity/ApartmentFeeValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/model/src/main/java/com/msb/lease/model/entity/ApartmentFeeValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/model/src/main/java/com/msb/lease/model/entity/ApartmentLabel.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/model/src/main/java/com/msb/lease/model/entity/ApartmentLabel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/model/src/main/java/com/msb/lease/model/entity/ViewAppointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/model/src/main/java/com/msb/lease/model/entity/ViewAppointment.java" afterDir="false" />
+    <list default="true" id="a699527a-2c54-4be8-9370-76609da3e527" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/AdminWebApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/AdminWebApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/controller/apartment/ApartmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/controller/apartment/ApartmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/controller/lease/LeaseAgreementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/controller/lease/LeaseAgreementController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/controller/system/SystemUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/controller/system/SystemUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/mapper/ApartmentInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/mapper/ApartmentInfoMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/ApartmentInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/ApartmentInfoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/LeaseAgreementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/LeaseAgreementService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/impl/ApartmentInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/impl/ApartmentInfoServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/impl/LeaseAgreementServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/impl/LeaseAgreementServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/resources/mapper/SystemUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/resources/mapper/SystemUserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/web/web-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-app/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/Main.java" beforeDir="false" />
-=======
-    <list default="true" id="d165b998-ccdb-4d52-a6bd-020c95fa28cf" name="Changes" comment="llll">
-      <change beforePath="$PROJECT_DIR$/lease/common/src/main/java/com/msb/lease/common/utiles/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/common/src/main/java/com/msb/lease/common/utiles/JwtUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/intercepotor/AuthenticationInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/intercepotor/AuthenticationInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/impl/LoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/impl/LoginServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/resources/application.yml" afterDir="false" />
->>>>>>> cj
+      <change beforePath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/AdminWebApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/AdminWebApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/controller/agreement/LeaseAgreementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/controller/agreement/LeaseAgreementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/controller/history/BrowsingHistoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/controller/history/BrowsingHistoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/mapper/BrowsingHistoryMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/mapper/BrowsingHistoryMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/mapper/LeaseAgreementMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/mapper/LeaseAgreementMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/BrowsingHistoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/BrowsingHistoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/LeaseAgreementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/LeaseAgreementService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/impl/BrowsingHistoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/impl/BrowsingHistoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/impl/LeaseAgreementServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/impl/LeaseAgreementServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lease/web/web-app/src/main/resources/mapper/BrowsingHistoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/resources/mapper/BrowsingHistoryMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lease/web/web-app/src/main/resources/mapper/LeaseAgreementMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/resources/mapper/LeaseAgreementMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,14 +33,12 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="2io51IvwGNaH5piXhFec9L58oSB" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-    <ConfirmationsSetting value="2" id="Remove" />
-  </component>
+  <component name="ProjectId" id="2ioyQRX6Wl8MP5M7U5G7mj0YHG2" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
@@ -201,45 +46,38 @@
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
-<<<<<<< HEAD
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Merging master",
-=======
-    "git-widget-placeholder": "cj",
->>>>>>> cj
+    "last_opened_file_path": "E:/Project/ziyan/lease/web/web-app/src/main/java/com/msb/lease/web/app/custom/config",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "spring.configuration.checksum": "140a995e1a15416de9d78d0f42e0e3b4",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "297dab0a4ad76dec048f3bf34df1bd51",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
-<<<<<<< HEAD
-  <component name="RunManager" selected="Spring Boot.AdminWebApplication">
-=======
-  <component name="ReactorSettings">
-    <option name="notificationShown" value="true" />
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Project\ziyan\lease\web\web-app\src\main\java\com\msb\lease\web\app\custom\config" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.JwtUtil">
->>>>>>> cj
-    <configuration name="JwtUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.msb.lease.common.utiles.JwtUtil" />
-      <module name="common" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.msb.lease.common.utiles.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-<<<<<<< HEAD
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.AdminWebApplication (1)">
     <configuration name="AdminWebApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="web-app" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.msb.lease.AdminWebApplication" />
@@ -247,71 +85,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AdminWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="web-admin" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.msb.lease.AdminWebApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.msb.lease.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-=======
     <configuration name="AdminWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="web-admin" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.msb.lease.AdminWebApplication" />
->>>>>>> cj
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-<<<<<<< HEAD
-        <item itemvalue="Spring Boot.AdminWebApplication" />
-=======
->>>>>>> cj
-        <item itemvalue="Application.JwtUtil" />
-      </list>
-    </recent_temporary>
   </component>
-<<<<<<< HEAD
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-=======
->>>>>>> cj
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a29382aa-d2b0-4533-a77a-eae58f4d44f6" name="Changes" comment="" />
-      <created>1720143874130</created>
+      <changelist id="a699527a-2c54-4be8-9370-76609da3e527" name="Changes" comment="" />
+      <created>1720171211452</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1720143874130</updated>
-      <workItem from="1720143875834" duration="4596000" />
+      <updated>1720171211452</updated>
+      <workItem from="1720171212921" duration="19238000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="org.springframework.beans.factory.BeanCreationException" package="org.springframework.beans.factory" />
-          <option name="timeStamp" value="1" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/lease/common/src/main/java/com/msb/lease/common/utiles/JwtUtil.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

@@ -3,5 +3,52 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.msb.lease.web.app.mapper.LeaseAgreementMapper">
-
+<!--<resultMap id="AgreementDetailVo" type="com.msb.lease.web.app.vo.agreement.AgreementDetailVo" autoMapping="true">-->
+<!--    <id property="id" column="id"/>-->
+<!--    <result property="roomId" column="room_id"/>-->
+<!--    <result property="apartmentId" column="apartment_id"/>-->
+<!--   <collection property="roomGraphVoList" javaType="com.msb.lease.web.app.vo.graph.GraphVo" select="selectRoomGraph" column="room_id"/>-->
+<!--   <collection property="apartmentGraphVoList" javaType="com.msb.lease.web.app.vo.graph.GraphVo" select="selectApartmentGraph" column="apartment_id"/>-->
+<!--</resultMap>-->
+<!--    <select id="selectDetailById" resultMap="AgreementDetailVo" >-->
+<!--        select la.id,-->
+<!--        la.phone,-->
+<!--        la.name,-->
+<!--        la.identification_number,-->
+<!--        la.apartment_id,-->
+<!--        la.room_id,-->
+<!--        la.lease_start_date,-->
+<!--        la.lease_end_date,-->
+<!--        la.lease_term_id,-->
+<!--        la.rent,-->
+<!--        la.deposit,-->
+<!--        la.payment_type_id,-->
+<!--        la.status,-->
+<!--        la.source_type,-->
+<!--        la.additional_info,-->
+<!--        ai.name,-->
+<!--        ri.room_number,-->
+<!--        pt.name,-->
+<!--        lt.month_count,-->
+<!--        lt.unit-->
+<!--        from lease_agreement la-->
+<!--        left join apartment_info ai on ai.id = la.apartment_id and ai.is_deleted = 0-->
+<!--        left join room_info ri on ri.id = la.room_id and ri.is_deleted = 0-->
+<!--        left join payment_type pt on pt.id = la.payment_type_id and pt.is_deleted = 0-->
+<!--        left join lease_term lt on lt.id = la.lease_term_id and lt.is_deleted = 0-->
+<!--        where la.is_deleted=0-->
+<!--        and la.id =#{id}-->
+<!--    </select>-->
+<!--    <select id="selectRoomGraph" resultType="com.msb.lease.web.app.vo.graph.GraphVo">-->
+<!--        select name, url-->
+<!--        from graph_info-->
+<!--        where item_type = 2-->
+<!--        and item_id=#{room_id}-->
+<!--    </select>-->
+<!--    <select id="selectApartmentGraph" resultType="com.msb.lease.web.app.vo.graph.GraphVo" >-->
+<!--        select name, url-->
+<!--        from graph_info-->
+<!--        where item_type = 1-->
+<!--          and item_id=#{apartment_id}-->
+<!--    </select>-->
 </mapper>
