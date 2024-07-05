@@ -1,6 +1,7 @@
 package com.msb.lease.model.entity;
 
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.msb.lease.model.enums.AppointmentStatus;
 import io.swagger.v3.oas.annotations.media.Schema;
 import com.baomidou.mybatisplus.annotation.TableField;
@@ -34,6 +35,7 @@ public class ViewAppointment extends BaseEntity {
 
     @Schema(description = "预约时间")
     @TableField(value = "appointment_time")
+    @JsonFormat(pattern = "yyyy-MM-dd hh:mm:ss")
     private Date appointmentTime;
 
     @Schema(description = "备注信息")

@@ -5,9 +5,9 @@
 <mapper namespace="com.msb.lease.web.admin.mapper.SystemUserMapper">
    <!--分页条件查询-->
     <select id="selectUserPage" resultType="com.msb.lease.web.admin.vo.system.user.SystemUserItemVo">
-        SELECT
-        user.type,user.phone,user.avatar_url,user.additional_info,user.post_id,user.`status`,user.create_time,user.update_time,user.is_deleted,post.name
-        from system_user user left join system_post post on post.id=user.post_id
+        SELECT user.id,user.username,
+        user.name,user.type,user.phone,user.avatar_url,user.additional_info,user.post_id,user.`status`,user.create_time,user.update_time,user.is_deleted,
+        post.name as postName from system_user user left join system_post post on post.id=user.post_id
         <where>
             user.is_deleted=0
             <if test="queryVo.name != null and queryVo.name !=''">

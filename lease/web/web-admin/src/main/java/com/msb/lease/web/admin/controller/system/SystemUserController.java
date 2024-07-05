@@ -4,9 +4,11 @@ package com.msb.lease.web.admin.controller.system;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.msb.lease.common.result.Result;
+import com.msb.lease.common.result.ResultCodeEnum;
 import com.msb.lease.model.entity.SystemUser;
 import com.msb.lease.model.enums.BaseStatus;
 import com.msb.lease.web.admin.service.SystemUserService;
+import com.msb.lease.web.admin.utils.PhoneUtil;
 import com.msb.lease.web.admin.vo.system.user.SystemUserItemVo;
 import com.msb.lease.web.admin.vo.system.user.SystemUserQueryVo;
 import com.baomidou.mybatisplus.core.metadata.IPage;
@@ -15,6 +17,8 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import static com.msb.lease.common.result.ResultCodeEnum.FAIL;
 
 
 @Tag(name = "后台用户信息管理")
@@ -49,6 +53,13 @@ public class SystemUserController {
         if (systemUser.getPassword() != null) {
             systemUser.setPassword(DigestUtils.md5Hex(systemUser.getPassword()));
         }
+        //判断电话号码合法性
+        if (!PhoneUtil.isMobile(systemUser.getPhone())){
+            Result<Object> build = Result.build(null, FAIL);
+            build.setMessage("电话号码不合法请查询输入");
+            return  build;
+        }
+
         //如果注解Tableld注解存在则更新记录否则插入一条记录
         userService.saveOrUpdate(systemUser);
 
