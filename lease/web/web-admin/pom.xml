@@ -18,11 +18,19 @@
     </properties>
 
     <dependencies>
+<<<<<<< HEAD
         <!--引入commens模块-->
+=======
+>>>>>>> cj
         <dependency>
             <groupId>commons-codec</groupId>
             <artifactId>commons-codec</artifactId>
         </dependency>
+<<<<<<< HEAD
+=======
+    </dependencies>
+
+>>>>>>> cj
 
     </dependencies>
 </project>

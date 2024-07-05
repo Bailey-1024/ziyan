@@ -18,6 +18,7 @@
             </if>
         </where>
     </select>
+<<<<<<< HEAD
     <!--判断用户后台数据是否可用-->
     <select id="countByUsername" resultType="java.lang.Integer">
         select count(1) from system_user where username=#{username}
@@ -26,4 +27,21 @@
     <update id="deleteByIdTo">
         update system_user set is_deleted=1 where id=#{id}
     </update>
+=======
+    <select id="selectOneByUsername" resultType="com.msb.lease.model.entity.SystemUser">
+        SELECT id,
+               username,
+               `password`,
+               `name`,
+               type,
+               phone,
+               avatar_url,
+               additional_info,
+               post_id,
+               `status`
+        FROM system_user
+        WHERE is_deleted = 0
+          AND username = #{username}
+    </select>
+>>>>>>> cj
 </mapper>

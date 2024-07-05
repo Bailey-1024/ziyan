@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="b6c1b4c2-3ebd-4c85-a84f-8ea73bf7b6ec" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/lease/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/lease/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lease/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lease/common/pom.xml" afterDir="false" />
     </list>
+=======
+    <list default="true" id="d165b998-ccdb-4d52-a6bd-020c95fa28cf" name="Changes" comment="llll" />
+>>>>>>> cj
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +20,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
   <component name="ProjectId" id="2imii2KMBCgCiHffCzf8gq37MPh" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -28,10 +33,20 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+=======
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="2" id="Remove" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "git-widget-placeholder": "cj",
+>>>>>>> cj
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+<<<<<<< HEAD
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
@@ -70,5 +85,18 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+=======
+    "project.structure.last.edited": "Global Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+>>>>>>> cj
   </component>
 </project>
