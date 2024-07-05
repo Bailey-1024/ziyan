@@ -28,13 +28,14 @@ public class ApartmentController {
     @Operation(summary = "保存或更新公寓信息")
     @PostMapping("saveOrUpdate")
     public Result saveOrUpdate(@RequestBody ApartmentSubmitVo apartmentSubmitVo) {
-
+        apartmentInfoService.saveOrUpdateApartment(apartmentSubmitVo);
         return Result.ok();
     }
 
     @Operation(summary = "根据条件分页查询公寓列表")
     @GetMapping("pageItem")
     public Result<IPage<ApartmentItemVo>> pageItem(@RequestParam long current, @RequestParam long size, ApartmentQueryVo queryVo) {
+
         return Result.ok();
     }
 
