@@ -3,5 +3,13 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.msb.lease.web.app.mapper.BrowsingHistoryMapper">
-
+    <resultMap id="HistoryVoMap" type="com.msb.lease.web.app.vo.history.HistoryItemVo">
+        <id property="id" column="id"/>
+        <association property="roomGraphVoList" javaType="com.msb.lease.web.app.vo.graph" autoMapping="true">
+            <result property="name" column="rl_name"/>
+        </association>
+    </resultMap>
+    <select id="queryHistory" resultMap="HistoryVoMap">
+        select
+    </select>
 </mapper>
