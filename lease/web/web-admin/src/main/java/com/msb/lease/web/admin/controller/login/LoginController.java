@@ -1,6 +1,5 @@
 package com.msb.lease.web.admin.controller.login;
 
-
 import com.msb.lease.common.login.LoginUserHolder;
 import com.msb.lease.common.result.Result;
 import com.msb.lease.common.utiles.JwtUtil;
@@ -14,6 +13,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+// 后台管理系统登录管理控制器
 @Tag(name = "后台管理系统登录管理")
 @RestController
 @RequestMapping("/admin")
@@ -22,6 +22,7 @@ public class LoginController {
     @Autowired
     private LoginService loginService;
 
+    // 获取图形验证码
     @Operation(summary = "获取图形验证码")
     @GetMapping("login/captcha")
     public Result<CaptchaVo> getCaptcha() {
@@ -30,6 +31,7 @@ public class LoginController {
         return Result.ok(captchaVo);
     }
 
+    // 用户登录
     @Operation(summary = "登录")
     @PostMapping("login")
     public Result<String> login(@RequestBody LoginVo loginVo) {
@@ -37,6 +39,7 @@ public class LoginController {
         return Result.ok(token);
     }
 
+    // 获取登录用户个人信息
     @Operation(summary = "获取登陆用户个人信息")
     @GetMapping("info")
     public Result<SystemUserInfoVo> info(@RequestHeader("access-token") String token) {

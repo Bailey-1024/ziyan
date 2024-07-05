@@ -31,8 +31,13 @@ public class WebMvcConfiguration implements WebMvcConfigurer {
 
     }
 
+    /**
+     * 添加拦截器
+     * @param registry
+     */
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
+        //addPathPatterns拦截路径---------exckudePathPatterns放行
         registry.addInterceptor(this.authenticationInterceptor).addPathPatterns("/admin/**").
                 excludePathPatterns("/admin/login/**");
     }

@@ -16,6 +16,7 @@ public class JwtUtil {
     private static SecretKey secretKey =
             Keys.hmacShaKeyFor("CJMZCYKLGYfkxqsV50kankanshili666".getBytes());
 
+    // 生成JWT令牌
     public static String createToken(Long userId, String username) {
         String token = Jwts.builder().
                 setSubject("USER_INFO").//项目名
@@ -27,6 +28,7 @@ public class JwtUtil {
         return token;
     }
 
+    // 解析JWT令牌
     public static Claims parseToken(String token) {
         if (token == null) {
             throw new LeaseException(ResultCodeEnum.ADMIN_LOGIN_AUTH);
@@ -43,11 +45,9 @@ public class JwtUtil {
         }
     }
 
+    // 测试生成JWT令牌
     public static void main(String[] args) {
-<<<<<<< HEAD
         System.out.println(createToken(2L,"user"));
-=======
-        System.out.println(createToken(2L, "user"));
->>>>>>> cj
+
     }
 }
