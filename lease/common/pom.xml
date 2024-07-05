@@ -35,13 +35,19 @@
             <artifactId>lombok</artifactId>
             <version>1.18.30</version>
         </dependency>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6b437467c058f03ef1fffe3dab125724ec643583
         <!--redis依赖-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6b437467c058f03ef1fffe3dab125724ec643583
         <dependency>
             <groupId>io.minio</groupId>
            <artifactId>minio</artifactId>
@@ -51,7 +57,10 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 6b437467c058f03ef1fffe3dab125724ec643583
     </dependencies>
 </project>

@@ -15,4 +15,6 @@ public interface LeaseAgreementService extends IService<LeaseAgreement> {
 
     //分页查询
     IPage<AgreementVo> selectLAPage(IPage<AgreementVo> page, AgreementQueryVo queryVo);
+    //根据ID查询租约信息
+    AgreementVo getLessAgreementById(Long id);
 }
