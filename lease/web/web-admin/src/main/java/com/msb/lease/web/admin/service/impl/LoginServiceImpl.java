@@ -11,6 +11,7 @@ import com.msb.lease.web.admin.mapper.SystemUserMapper;
 import com.msb.lease.web.admin.service.LoginService;
 import com.msb.lease.web.admin.vo.login.CaptchaVo;
 import com.msb.lease.web.admin.vo.login.LoginVo;
+import com.msb.lease.web.admin.vo.system.user.SystemUserInfoVo;
 import com.wf.captcha.SpecCaptcha;
 import com.wf.captcha.base.Captcha;
 import jakarta.annotation.Resource;
@@ -80,5 +81,14 @@ public class LoginServiceImpl implements LoginService {
         }
         //创建并返回Token
         return JwtUtil.createToken(systemUser.getId(),systemUser.getUsername());
+    }
+
+    @Override
+    public SystemUserInfoVo getLoginUserInfo(Long userId) {
+        SystemUser systemUser = systemUserMapper.selectById(userId);
+        SystemUserInfoVo systemUserInfoVo = new SystemUserInfoVo();
+        systemUserInfoVo.setName(systemUser.getName());
+        systemUserInfoVo.setAvatarUrl(systemUser.getAvatarUrl());
+        return systemUserInfoVo;
     }
 }
