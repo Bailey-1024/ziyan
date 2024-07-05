@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56b3b06a-7a7c-40da-9e22-11f2330e6219" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/lease/model/src/main/java/com/msb/lease/model/entity/ViewAppointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/model/src/main/java/com/msb/lease/model/entity/ViewAppointment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/controller/lease/LeaseAgreementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/controller/lease/LeaseAgreementController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/LeaseAgreementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/LeaseAgreementService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/impl/LeaseAgreementServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/impl/LeaseAgreementServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/resources/application.yml" afterDir="false" />
-    </list>
+    <list default="true" id="56b3b06a-7a7c-40da-9e22-11f2330e6219" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,9 +22,17 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "spring.configuration.checksum": "297dab0a4ad76dec048f3bf34df1bd51",
     "vue.rearranger.settings.migration": "true"
@@ -64,7 +66,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1720147034519</updated>
-      <workItem from="1720147035939" duration="300000" />
+      <workItem from="1720147035939" duration="945000" />
     </task>
     <servers />
   </component>
