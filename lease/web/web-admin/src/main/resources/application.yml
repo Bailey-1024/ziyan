@@ -6,7 +6,7 @@ spring:
     type: com.zaxxer.hikari.HikariDataSource
     url: jdbc:mysql://localhost:3306/lease?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=GMT%2b8
     username: root
-    password: 123456
+    password: root
     hikari: #配置数据库连接池相关配置
       connection-test-query: SELECT 1 # 自动检测连接
       connection-timeout: 60000 #数据库连接超时时间,默认30秒
@@ -43,6 +43,12 @@ spring:
           refresh:
             adaptive: true  #支持集群拓扑动态感应刷新，自适应拓扑刷新是否使用所有可用的更新
             period: 2000
+
+
+#      host: 192.168.40.131
+#      port: 6379
+#      database: 0
+#      password: 123456
 
 #用于打印框架生成的sql语句，便于调试
 mybatis-plus:

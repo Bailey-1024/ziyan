@@ -10,4 +10,8 @@ public interface LoginService {
      * @return
      */
     CaptchaVo getCaptcha();
+
+    String login(LoginVo loginVo);
+
+    SystemUserInfoVo getLoginUserInfo(Long userId);
 }

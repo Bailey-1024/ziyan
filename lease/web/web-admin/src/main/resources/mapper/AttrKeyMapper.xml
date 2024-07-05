@@ -5,7 +5,7 @@
 <mapper namespace="com.msb.lease.web.admin.mapper.AttrKeyMapper">
     <resultMap id="BaseResultMap" type="com.msb.lease.web.admin.vo.attr.AttrKeyVo">
         <id column="id" property="id"/>
-        <id column="key_name" property="name"/>
+        <result column="key_name" property="name"/>
         <collection property="attrValueList" ofType="com.msb.lease.model.entity.AttrValue">
             <id column="value_id" property="id"/>
             <result column="value_name" property="name"/>
