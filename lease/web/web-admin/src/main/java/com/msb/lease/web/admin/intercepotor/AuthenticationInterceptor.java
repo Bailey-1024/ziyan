@@ -15,9 +15,11 @@ public class AuthenticationInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         String token = request.getHeader("access-tocken");
-
+        //解释token
         Claims claims = JwtUtil.parseToken(token);
+        //得到id
         Long userId = claims.get("userId",Long.class);
+        //姓名
         String username = claims.get("username",String.class);
         LoginUserHolder.setLoginUser(new LoginUser(userId, username));
 

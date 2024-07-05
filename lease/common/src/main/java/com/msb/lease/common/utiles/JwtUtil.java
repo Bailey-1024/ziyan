@@ -42,4 +42,8 @@ public class JwtUtil {
             throw new LeaseException(ResultCodeEnum.TOKEN_INVALID);
         }
     }
+
+    public static void main(String[] args) {
+        System.out.println(createToken(2L,"user"));
+    }
 }

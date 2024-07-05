@@ -46,7 +46,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
-<<<<<<< HEAD
+
         <dependency>
             <groupId>io.minio</groupId>
            <artifactId>minio</artifactId>
@@ -55,7 +55,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-=======
+        </dependency>
         <!--JWT配置-->
         <dependency>
             <groupId>io.jsonwebtoken</groupId>
@@ -70,7 +70,7 @@
             <groupId>io.jsonwebtoken</groupId>
             <artifactId>jjwt-jackson</artifactId>
             <scope>runtime</scope>
->>>>>>> cj
+
         </dependency>
     </dependencies>
 </project>
