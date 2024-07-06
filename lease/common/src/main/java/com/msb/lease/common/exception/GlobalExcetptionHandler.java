@@ -21,4 +21,11 @@ public class GlobalExcetptionHandler {
         e.printStackTrace();
         return Result.fail();
     }
+
+    @ExceptionHandler(LeaseException.class)
+    @ResponseBody
+    public Result error(LeaseException e){
+        e.printStackTrace();
+        return Result.fail(e.getCode(),e.getMessage());
+    }
 }

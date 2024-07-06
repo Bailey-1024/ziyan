@@ -5,9 +5,13 @@ import com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.inner.PaginationInnerInterceptor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-//开启分页创建
+
 @Configuration
 public class MPConfiguration {
+    /**
+     * 添加Mybatis-plus分页配置
+     * @return
+     */
     @Bean
     public MybatisPlusInterceptor mybatisPlusInterceptor(){
         MybatisPlusInterceptor mybatisPlusInterceptor=new MybatisPlusInterceptor();

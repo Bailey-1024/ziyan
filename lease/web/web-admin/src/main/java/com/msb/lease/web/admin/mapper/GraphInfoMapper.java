@@ -3,6 +3,8 @@ package com.msb.lease.web.admin.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.msb.lease.model.entity.GraphInfo;
+import com.msb.lease.model.enums.ItemType;
+import com.msb.lease.web.admin.vo.graph.GraphVo;
 
 import java.util.List;
 
@@ -13,7 +15,13 @@ import java.util.List;
 * @Entity com.msb.lease.model.GraphInfo
 */
 public interface GraphInfoMapper extends BaseMapper<GraphInfo> {
-
+    /**
+     * 根据图像所属类型和图像所属id,查询图片列表
+     * @param itemType
+     * @param id
+     * @return
+     */
+    List<GraphVo> selectListByItemTypeAndId(ItemType itemType, Long id);
 }
 
 

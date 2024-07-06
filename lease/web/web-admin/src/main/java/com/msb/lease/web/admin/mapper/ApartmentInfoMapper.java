@@ -5,6 +5,8 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.msb.lease.model.entity.ApartmentInfo;
+import com.msb.lease.web.admin.vo.apartment.ApartmentItemVo;
+import com.msb.lease.web.admin.vo.apartment.ApartmentQueryVo;
 import com.msb.lease.web.admin.vo.apartment.ApartmentSubmitVo;
 
 /**
@@ -14,11 +16,15 @@ import com.msb.lease.web.admin.vo.apartment.ApartmentSubmitVo;
 * @Entity com.msb.lease.model.ApartmentInfo
 */
 public interface ApartmentInfoMapper extends BaseMapper<ApartmentInfo> {
+
+
     /**
-     * 保存或者更新公寓信息
-     * @param apartmentSubmitVo
+     * 多条件分页查询
+     * @param apartmentItemVos
+     * @param queryVo
+     * @return
      */
-    void saveOrUpdateApartment(ApartmentSubmitVo apartmentSubmitVo);
+    IPage<ApartmentItemVo> pageApartmentByQuery(Page<ApartmentItemVo> apartmentItemVos, ApartmentQueryVo queryVo);
 }
 
 
