@@ -1,6 +1,7 @@
 package com.msb.lease.web.app.controller.agreement;
 
 import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
+import com.msb.lease.common.login.LoginUserHolder;
 import com.msb.lease.common.result.Result;
 import com.msb.lease.model.entity.LeaseAgreement;
 import com.msb.lease.model.enums.LeaseStatus;
@@ -24,7 +25,11 @@ public class LeaseAgreementController {
     @Operation(summary = "获取个人租约基本信息列表")
     @GetMapping("listItem")
     public Result<List<AgreementItemVo>> listItem() {
-        return Result.ok();
+        //获取当前登录的用户id
+        long userId = LoginUserHolder.getLoginUser().getUserId();
+        //获取个人租约信息基本表
+        List<AgreementItemVo> result=leaseAgreementService.getItemByUserId(userId);
+        return Result.ok(result);
     }
 
     @Operation(summary = "根据id获取租约详细信息")

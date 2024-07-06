@@ -6,6 +6,7 @@ import com.msb.lease.web.app.mapper.*;
 import com.msb.lease.web.app.service.LeaseAgreementService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.msb.lease.web.app.vo.agreement.AgreementDetailVo;
+import com.msb.lease.web.app.vo.agreement.AgreementItemVo;
 import com.msb.lease.web.app.vo.graph.GraphVo;
 import jakarta.annotation.Resource;
 import org.springframework.beans.BeanUtils;
@@ -54,8 +55,8 @@ public class LeaseAgreementServiceImpl extends ServiceImpl<LeaseAgreementMapper,
         graphInfoLambdaQueryWrapper1.eq(GraphInfo::getItemId,apartmentInfo.getId()).eq(GraphInfo::getItemType,1);
         List<GraphInfo> apartmentList=graphInfoMapper.selectList(graphInfoLambdaQueryWrapper1);
         List<GraphVo> apartmentGraphs=new ArrayList<>();
-        GraphVo apartmentGraph= new GraphVo();
         for (int i = 0; i < apartmentList.size(); i++) {
+            GraphVo apartmentGraph= new GraphVo();
             apartmentGraph.setName(apartmentList.get(i).getName());
             apartmentGraph.setUrl(apartmentList.get(i).getUrl());
             apartmentGraphs.add(apartmentGraph);
@@ -66,8 +67,8 @@ public class LeaseAgreementServiceImpl extends ServiceImpl<LeaseAgreementMapper,
         graphInfoLambdaQueryWrapper2.eq(GraphInfo::getItemId,roomInfo.getId()).eq(GraphInfo::getItemType,2);
         List<GraphInfo> roomList=graphInfoMapper.selectList(graphInfoLambdaQueryWrapper2);
         List<GraphVo> roomGraphs=new ArrayList<>();
-        GraphVo roomGraph= new GraphVo();
         for (int i = 0; i < roomList.size(); i++) {
+            GraphVo roomGraph= new GraphVo();
             roomGraph.setName(roomList.get(i).getName());
             roomGraph.setUrl(roomList.get(i).getUrl());
             roomGraphs.add(roomGraph);
@@ -89,6 +90,13 @@ public class LeaseAgreementServiceImpl extends ServiceImpl<LeaseAgreementMapper,
         //设置房间图片列表
         agreementDetailVo.setRoomGraphVoList(roomGraphs);
         return agreementDetailVo;
+    }
+
+    //获取个人租约详细列表
+    @Override
+    public List<AgreementItemVo> getItemByUserId(long userId) {
+
+        return leaseAgreementMapper.selectItemByUserId(userId);
     }
 }
 

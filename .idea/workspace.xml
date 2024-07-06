@@ -5,19 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a699527a-2c54-4be8-9370-76609da3e527" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/AdminWebApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/AdminWebApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/impl/LeaseAgreementServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/java/com/msb/lease/web/admin/service/impl/LeaseAgreementServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/web/web-admin/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-admin/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/AdminWebApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/AdminWebApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/custom/config/StringToBaseEnumConverterFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/custom/config/StringToItemTypeConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/custom/config/WebMvcConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/controller/agreement/LeaseAgreementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/controller/agreement/LeaseAgreementController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/controller/history/BrowsingHistoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/controller/history/BrowsingHistoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/mapper/BrowsingHistoryMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/mapper/BrowsingHistoryMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/controller/appointment/ViewAppointmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/controller/appointment/ViewAppointmentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/mapper/LeaseAgreementMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/mapper/LeaseAgreementMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/BrowsingHistoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/BrowsingHistoryService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/LeaseAgreementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/LeaseAgreementService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/impl/BrowsingHistoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/impl/BrowsingHistoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/ViewAppointmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/ViewAppointmentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/impl/LeaseAgreementServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/impl/LeaseAgreementServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lease/web/web-app/src/main/resources/mapper/BrowsingHistoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/resources/mapper/BrowsingHistoryMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/impl/ViewAppointmentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/java/com/msb/lease/web/app/service/impl/ViewAppointmentServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lease/web/web-app/src/main/resources/mapper/LeaseAgreementMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lease/web/web-app/src/main/resources/mapper/LeaseAgreementMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,31 +37,31 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/Project/ziyan/lease/web/web-app/src/main/java/com/msb/lease/web/app/custom/config",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "297dab0a4ad76dec048f3bf34df1bd51",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Project/ziyan/lease/web/web-app/src/main/java/com/msb/lease/web/app/custom/config&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;297dab0a4ad76dec048f3bf34df1bd51&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Project\ziyan\lease\web\web-app\src\main\java\com\msb\lease\web\app\custom\config" />
@@ -101,7 +98,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1720171211452</updated>
-      <workItem from="1720171212921" duration="19238000" />
+      <workItem from="1720171212921" duration="19396000" />
+      <workItem from="1720224750760" duration="17100000" />
     </task>
     <servers />
   </component>

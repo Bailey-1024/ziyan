@@ -51,4 +51,31 @@
 <!--        where item_type = 1-->
 <!--          and item_id=#{apartment_id}-->
 <!--    </select>-->
+    <resultMap id="AgreementItemVo" type="com.msb.lease.web.app.vo.agreement.AgreementItemVo" autoMapping="true">
+        <id property="id" column="id"/>
+        <collection property="roomGraphVoList" ofType="com.msb.lease.web.app.vo.graph.GraphVo" select="selectRoomGraph" column="room_id"/>
+    </resultMap>
+    <select id="selectItemByUserId" resultMap="AgreementItemVo">
+        select lg.id,
+               lg.lease_start_date,
+               lg.lease_end_date,
+               lg.rent,
+               lg.status,
+               lg.source_type,
+               ai.name,
+               ri.room_number
+        from lease_agreement lg
+                 left join apartment_info ai on ai.id = lg.apartment_id and ai.is_deleted = 0
+                 left join room_info ri on ri.id = lg.room_id and ri.is_deleted = 0
+                 left join user_info ui on ui.phone = lg.phone and ui.is_deleted = 0
+        where lg.is_deleted = 0
+          and ui.id = #{userId}
+    </select>
+    <select id="selectRoomGraph" resultType="com.msb.lease.web.app.vo.graph.GraphVo">
+        select name,url
+        from graph_info
+        where item_type=2
+        and item_id=#{room_id}
+    </select>
+
 </mapper>
