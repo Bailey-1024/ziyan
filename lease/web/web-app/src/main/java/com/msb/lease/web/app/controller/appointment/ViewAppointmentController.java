@@ -1,6 +1,7 @@
 package com.msb.lease.web.app.controller.appointment;
 
 
+import com.msb.lease.common.login.LoginUserHolder;
 import com.msb.lease.common.result.Result;
 import com.msb.lease.model.entity.ViewAppointment;
 import com.msb.lease.web.app.service.ViewAppointmentService;
@@ -27,10 +28,22 @@ public class ViewAppointmentController {
         return Result.ok();
     }
 
+
+    /**
+     * 查看个人预约看房列表
+     *
+     * 1、获取登录这的userId
+     * 2、通过userId查询预约看房列表
+     * @return
+     */
     @Operation(summary = "查询个人预约看房列表")
     @GetMapping("listItem")
     public Result<List<AppointmentItemVo>> listItem() {
-        return Result.ok();
+        //通过当前登陆者获取登录者id
+        long userId = LoginUserHolder.getLoginUser().getUserId();
+        //通过userId查询预约看房列表
+        List<AppointmentItemVo> result=service.getItemByUserId(userId);
+        return Result.ok(result);
     }
 
     @GetMapping("getDetailById")

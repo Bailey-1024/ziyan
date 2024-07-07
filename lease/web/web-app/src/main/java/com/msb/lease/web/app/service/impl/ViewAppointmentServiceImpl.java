@@ -7,6 +7,7 @@ import com.msb.lease.web.app.service.ViewAppointmentService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.msb.lease.web.app.vo.apartment.ApartmentItemVo;
 import com.msb.lease.web.app.vo.appointment.AppointmentDetailVo;
+import com.msb.lease.web.app.vo.appointment.AppointmentItemVo;
 import com.msb.lease.web.app.vo.graph.GraphVo;
 import jakarta.annotation.Resource;
 import org.springframework.beans.BeanUtils;
@@ -41,6 +42,8 @@ public class ViewAppointmentServiceImpl extends ServiceImpl<ViewAppointmentMappe
     @Resource
     private RoomLabelMapper roomLabelMapper;
 
+
+    //通过id查看预约看房信息详情
     @Override
     public AppointmentDetailVo getDetailById(Long id) {
         //创建预约看房详细信息表
@@ -136,6 +139,14 @@ public class ViewAppointmentServiceImpl extends ServiceImpl<ViewAppointmentMappe
         //将公寓基本添加到预约看房信息中
         detailVo.setApartmentItemVo(apartmentItemVo);
         return detailVo;
+    }
+
+
+    //通过userId查看个人预约看房信息表
+    @Override
+    public List<AppointmentItemVo> getItemByUserId(long userId) {
+
+        return viewAppointmentMapper.selectByUserId(userId);
     }
 }
 
