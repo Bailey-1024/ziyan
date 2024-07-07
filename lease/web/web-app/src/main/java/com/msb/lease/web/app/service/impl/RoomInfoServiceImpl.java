@@ -2,10 +2,12 @@ package com.msb.lease.web.app.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.msb.lease.common.login.LoginUserHolder;
 import com.msb.lease.model.entity.*;
 import com.msb.lease.model.enums.ItemType;
 import com.msb.lease.web.app.mapper.*;
 import com.msb.lease.web.app.service.ApartmentInfoService;
+import com.msb.lease.web.app.service.BrowsingHistoryService;
 import com.msb.lease.web.app.service.RoomInfoService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.msb.lease.web.app.vo.apartment.ApartmentItemVo;
@@ -15,6 +17,7 @@ import com.msb.lease.web.app.vo.graph.GraphVo;
 import com.msb.lease.web.app.vo.room.RoomDetailVo;
 import com.msb.lease.web.app.vo.room.RoomItemVo;
 import com.msb.lease.web.app.vo.room.RoomQueryVo;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.checkerframework.checker.units.qual.A;
 import org.springframework.beans.BeanUtils;
@@ -50,6 +53,9 @@ public class RoomInfoServiceImpl extends ServiceImpl<RoomInfoMapper, RoomInfo>
     private FeeValueMapper feeValueMapper;
     @Autowired
     private ApartmentInfoService apartmentInfoService;
+   //浏览历史
+    @Resource
+    private BrowsingHistoryService browsingHistoryService;
     //分页条件查询
     @Override
     public IPage<RoomItemVo> iPageByquerVo(IPage<RoomQueryVo> iPage, RoomQueryVo queryVo) {
@@ -92,6 +98,8 @@ public class RoomInfoServiceImpl extends ServiceImpl<RoomInfoMapper, RoomInfo>
         detailVo.setFacilityInfoList(facilityInfoList);
         detailVo.setGraphVoList(graphVoList);
         detailVo.setAttrValueVoList(attrValueVoList);
+        //保存浏览历史
+        browsingHistoryService.saveHistory(LoginUserHolder.getLoginUser().getUserId(),id);
         return detailVo;
     }
    //根据公寓id分页查询房间列表

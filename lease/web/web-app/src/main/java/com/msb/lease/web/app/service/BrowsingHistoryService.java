@@ -15,4 +15,5 @@ public interface BrowsingHistoryService extends IService<BrowsingHistory> {
     //通过当前登录的用户id分页查询历史记录
     IPage<HistoryItemVo> getHistoryItem(IPage<HistoryItemVo> page, long userId);
 
+    void saveHistory(long userId, Long id);
 }
