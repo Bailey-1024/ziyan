@@ -11,9 +11,7 @@ import java.util.List;
 * @createDate 2023-07-26 11:12:39
 */
 public interface LeaseTermService extends IService<LeaseTerm> {
-<<<<<<< HEAD
-    List<LeaseTerm> getLeaseTerm(Long id);
-=======
 
->>>>>>> mzc
+    List<LeaseTerm> getLeaseTerm(Long id);
+
 }

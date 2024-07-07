@@ -6,10 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
-<<<<<<< HEAD
-=======
 
->>>>>>> mzc
 public class AdminWebApplication {
     public static void main(String[] args) {
         SpringApplication.run(AdminWebApplication.class,args);
