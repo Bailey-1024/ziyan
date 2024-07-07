@@ -34,5 +34,13 @@ public class SystemPost extends BaseEntity {
     @TableField(value = "status")
     private BaseStatus status;
 
-
+    @Override
+    public String toString() {
+        return "SystemPost{" +
+                "postCode='" + postCode + '\'' +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", status=" + status +
+                '}';
+    }
 }

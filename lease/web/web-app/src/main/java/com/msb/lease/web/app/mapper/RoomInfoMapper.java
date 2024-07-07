@@ -16,5 +16,7 @@ import java.math.BigDecimal;
 * @Entity com.msb.lease.model.entity.RoomInfo
 */
 public interface RoomInfoMapper extends BaseMapper<RoomInfo> {
+    //分页条件查询
+    IPage<RoomItemVo> iPageByquerVo(IPage<RoomQueryVo> iPage, RoomQueryVo queryVo);
 
 }

@@ -12,7 +12,19 @@ import java.util.List;
 * @Entity com.msb.lease.model.FacilityInfo
 */
 public interface FacilityInfoMapper extends BaseMapper<FacilityInfo> {
+    /**
+     * 根据公寓id查询公寓配套列表
+     * @param id
+     * @return
+     */
+    List<FacilityInfo> selectListByApartmentId(Long id);
 
+    /**
+     * 根据房间id查询房间配套列表
+     * @param id
+     * @return
+     */
+    List<FacilityInfo> selectListByRoomId(Long id);
 }
 
 

@@ -5,11 +5,15 @@ import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.msb.lease.model.enums.ReleaseStatus;
 import io.swagger.v3.oas.annotations.media.Schema;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Schema(description = "公寓信息表")
 @TableName(value = "apartment_info")
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class ApartmentInfo extends BaseEntity {
 
     private static final long serialVersionUID = 1L;

@@ -13,7 +13,19 @@ import java.util.List;
 * @Entity com.msb.lease.model.LabelInfo
 */
 public interface LabelInfoMapper extends BaseMapper<LabelInfo> {
+    /**
+     * 根据公寓Id查询对应的标签信息
+     * @param id
+     * @return
+     */
+    List<LabelInfo> selectListByApartmentId(Long id);
 
+    /**
+     * 根据房间ID查询标签列表
+     * @param id
+     * @return
+     */
+    List<LabelInfo> selectListByRoomId(Long id);
 }
 
 

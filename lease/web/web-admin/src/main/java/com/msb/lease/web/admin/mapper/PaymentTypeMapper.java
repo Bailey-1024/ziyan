@@ -12,7 +12,12 @@ import java.util.List;
  * @Entity com.msb.lease.model.PaymentType
  */
 public interface PaymentTypeMapper extends BaseMapper<PaymentType> {
-
+    /**
+     * 根据房间id查询对应的支付列表
+     * @param id
+     * @return
+     */
+    List<PaymentType> selectListByRoomId(Long id);
 }
 
 
