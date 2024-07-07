@@ -4,4 +4,18 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.msb.lease.web.app.mapper.GraphInfoMapper">
 
+    <select id="selectListByItemTypeAndId" resultType="com.msb.lease.web.app.vo.graph.GraphVo">
+        select * from graph_info where is_deleted=0 and item_id=#{id}
+    </select>
+    <!--通公寓id查询图片信息-->
+    <select id="selectByListId" resultType="com.msb.lease.web.app.vo.graph.GraphVo">
+        SELECT *
+        from graph_info gi
+                 LEFT JOIN apartment_info ai on gi.item_id = ai.id and ai.is_deleted = 0
+        WHERE gi.is_deleted = 0
+          and ai.id = #{id}
+    </select>
+    <select id="selectMin" resultType="java.math.BigDecimal">
+        select  min(rent) from room_info
+    </select>
 </mapper>

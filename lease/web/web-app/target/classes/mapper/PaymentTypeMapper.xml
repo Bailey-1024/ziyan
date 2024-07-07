@@ -3,5 +3,12 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.msb.lease.web.app.mapper.PaymentTypeMapper">
-
+    <!--查询支付方式-->
+    <select id="selectByListId" resultType="com.msb.lease.model.entity.PaymentType">
+        SELECT *
+        from payment_type pt
+                 LEFT JOIN room_payment_type rpt on pt.id = rpt.payment_type_id and rpt.is_deleted = 0
+        where pt.is_deleted = 0
+          and rpt.room_id = #{id}
+    </select>
 </mapper>

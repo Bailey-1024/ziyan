@@ -1,6 +1,7 @@
 package com.msb.lease.web.app.mapper;
 
 import com.msb.lease.model.entity.RoomInfo;
+import com.msb.lease.web.app.vo.room.RoomDetailVo;
 import com.msb.lease.web.app.vo.room.RoomItemVo;
 import com.msb.lease.web.app.vo.room.RoomQueryVo;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
@@ -18,5 +19,6 @@ import java.math.BigDecimal;
 public interface RoomInfoMapper extends BaseMapper<RoomInfo> {
     //分页条件查询
     IPage<RoomItemVo> iPageByquerVo(IPage<RoomQueryVo> iPage, RoomQueryVo queryVo);
-
+    //根据公寓id分页查询房间列表
+    IPage<RoomItemVo> selectByIPage(IPage<RoomQueryVo> iPage, Long id);
 }

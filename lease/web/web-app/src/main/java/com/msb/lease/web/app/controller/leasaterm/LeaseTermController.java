@@ -5,7 +5,11 @@ import com.msb.lease.model.entity.LeaseTerm;
 import com.msb.lease.web.app.service.LeaseTermService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
+<<<<<<< HEAD
 import jakarta.annotation.Resource;
+=======
+import org.springframework.beans.factory.annotation.Autowired;
+>>>>>>> mzc
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -17,8 +21,13 @@ import java.util.List;
 @RequestMapping("/app/term/")
 @Tag(name = "租期信息")
 public class LeaseTermController {
+<<<<<<< HEAD
     @Resource
     private LeaseTermService service;
+=======
+    @Autowired
+    private LeaseTermService leaseTermService;
+>>>>>>> mzc
 
     @GetMapping("listByRoomId")
     @Operation(summary = "根据房间id获取可选获取租期列表")

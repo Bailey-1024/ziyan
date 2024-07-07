@@ -5,6 +5,7 @@ import com.msb.lease.model.enums.ItemType;
 import com.msb.lease.web.app.vo.graph.GraphVo;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 /**
@@ -14,6 +15,12 @@ import java.util.List;
 * @Entity com.msb.lease.model.entity.GraphInfo
 */
 public interface GraphInfoMapper extends BaseMapper<GraphInfo> {
+
+    List<GraphVo> selectListByItemTypeAndId(ItemType itemType, Long id);
+   //通过公寓id查询图片信息
+    List<GraphVo> selectByListId(Long id);
+    //获取房间最小租金
+    BigDecimal selectMin();
 
 }
 

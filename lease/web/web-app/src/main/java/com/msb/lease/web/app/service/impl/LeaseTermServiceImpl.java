@@ -1,6 +1,10 @@
 package com.msb.lease.web.app.service.impl;
 
+<<<<<<< HEAD
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+=======
+
+>>>>>>> mzc
 import com.msb.lease.model.entity.LeaseTerm;
 import com.msb.lease.model.entity.RoomLeaseTerm;
 import com.msb.lease.web.app.mapper.LeaseAgreementMapper;
@@ -10,10 +14,16 @@ import com.msb.lease.web.app.mapper.RoomLeaseTermMapper;
 import com.msb.lease.web.app.service.LeaseAgreementService;
 import com.msb.lease.web.app.service.LeaseTermService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+<<<<<<< HEAD
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+=======
+
+import org.springframework.stereotype.Service;
+
+>>>>>>> mzc
 import java.util.List;
 
 /**

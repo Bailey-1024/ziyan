@@ -3,5 +3,12 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.msb.lease.web.app.mapper.FeeValueMapper">
-
+   <!--查询学杂费列表-->
+    <select id="selectByListId" resultType="com.msb.lease.web.app.vo.fee.FeeValueVo">
+        SELECT fv.id,fv.name,fv.unit,fv.fee_key_id,fk.`name` feeKeyName
+        from fee_value fv
+                 left JOIN apartment_fee_value afv on fv.id = afv.fee_value_id and afv.is_deleted=0
+                 left join fee_key fk on fk.id=fv.fee_key_id and fk.is_deleted=0
+        where fv.is_deleted=0 and afv.apartment_id=#{id}
+    </select>
 </mapper>

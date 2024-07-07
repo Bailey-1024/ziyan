@@ -13,7 +13,8 @@ import java.util.List;
 * @Entity com.msb.lease.model.entity.AttrValue
 */
 public interface AttrValueMapper extends BaseMapper<AttrValue> {
-
+   //通过id查询属性信息列表
+    List<AttrValueVo> selectByListId(Long id);
 }
 
 
