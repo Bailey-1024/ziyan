@@ -3,6 +3,7 @@ package com.msb.lease.web.app.service;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.msb.lease.model.entity.RoomInfo;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.msb.lease.web.app.vo.room.RoomDetailVo;
 import com.msb.lease.web.app.vo.room.RoomItemVo;
 import com.msb.lease.web.app.vo.room.RoomQueryVo;
 
@@ -14,4 +15,8 @@ import com.msb.lease.web.app.vo.room.RoomQueryVo;
 public interface RoomInfoService extends IService<RoomInfo> {
     //分页条件查询
     IPage<RoomItemVo> iPageByquerVo(IPage<RoomQueryVo> iPage, RoomQueryVo queryVo);
+
+    RoomDetailVo selectById(Long id);
+    //根据公寓id分页查询房间列表
+    IPage<RoomItemVo> selectByIPage(IPage<RoomQueryVo> iPage, Long id);
 }
