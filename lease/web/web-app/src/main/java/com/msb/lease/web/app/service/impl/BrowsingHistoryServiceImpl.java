@@ -20,5 +20,13 @@ public class BrowsingHistoryServiceImpl extends ServiceImpl<BrowsingHistoryMappe
 
     @Resource
     private BrowsingHistoryMapper mapper;
+<<<<<<< HEAD
 
+=======
+    //分页查询历史记录
+    @Override
+    public IPage<HistoryItemVo> getHistoryItem(IPage<HistoryItemVo> page, long userId) {
+        return mapper.queryHistory(page,userId) ;
+    }
+>>>>>>> lgy
 }

@@ -1,6 +1,7 @@
 package com.msb.lease.web.app.mapper;
 
 import com.msb.lease.model.entity.LeaseAgreement;
+import com.msb.lease.web.app.vo.agreement.AgreementDetailVo;
 import com.msb.lease.web.app.vo.agreement.AgreementItemVo;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
@@ -14,6 +15,7 @@ import java.util.List;
 */
 public interface LeaseAgreementMapper extends BaseMapper<LeaseAgreement> {
 
+    List<AgreementItemVo> selectItemByUserId(long userId);
 }
 
 

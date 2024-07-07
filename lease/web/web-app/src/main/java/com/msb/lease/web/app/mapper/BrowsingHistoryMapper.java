@@ -13,6 +13,11 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 */
 public interface BrowsingHistoryMapper extends BaseMapper<BrowsingHistory> {
 
+    //分页查询历史记录
+    IPage<HistoryItemVo> queryHistory(IPage<HistoryItemVo> page, long userId);
+
+
+
 }
 
 
