@@ -3,10 +3,6 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.msb.lease.web.app.mapper.BrowsingHistoryMapper">
-<<<<<<< HEAD
-
-
-=======
  <resultMap id="HistoryItemVo" type="com.msb.lease.web.app.vo.history.HistoryItemVo" autoMapping="true">
      <id property="id" column="id"/>
      <result property="roomId" column="room_id"/>
@@ -34,6 +30,6 @@
         where is_deleted=0
         and item_type=2
         and item_id = #{room_id}
+
     </select>
->>>>>>> lgy
 </mapper>
