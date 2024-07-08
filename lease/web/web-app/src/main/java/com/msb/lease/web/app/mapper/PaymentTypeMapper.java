@@ -12,7 +12,8 @@ import java.util.List;
 * @Entity com.msb.lease.model.entity.PaymentType
 */
 public interface PaymentTypeMapper extends BaseMapper<PaymentType> {
-
+   //查询支付方式
+    List<PaymentType> selectByListId(Long id);
 }
 
 

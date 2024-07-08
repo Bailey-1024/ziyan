@@ -3,5 +3,17 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.msb.lease.web.app.mapper.FacilityInfoMapper">
-
+   <!--查询配套信息-->
+    <select id="selectByListId" resultType="com.msb.lease.model.entity.FacilityInfo">
+        SELECT * from  facility_info fi LEFT JOIN room_facility rf on fi.id=rf.facility_id  and rf.is_deleted=0
+        where fi.is_deleted=0 and rf.room_id=#{id}
+    </select>
+    <!--通过id获取配套列表信息-->
+    <select id="selectByList" resultType="com.msb.lease.model.entity.FacilityInfo">
+        SELECT *
+        from facility_info fi
+                 left JOIN apartment_facility ai on fi.id = ai.facility_id and ai.is_deleted=0
+        where fi.is_deleted = 0
+          and ai.apartment_id = #{id}
+    </select>
 </mapper>

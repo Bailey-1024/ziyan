@@ -4,7 +4,11 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.msb.lease.model.entity.FeeValue;
 import com.msb.lease.web.admin.service.FeeValueService;
 import com.msb.lease.web.admin.mapper.FeeValueMapper;
+import com.msb.lease.web.admin.vo.fee.FeeValueVo;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
 * @author liubo
@@ -14,7 +18,18 @@ import org.springframework.stereotype.Service;
 @Service
 public class FeeValueServiceImpl extends ServiceImpl<FeeValueMapper, FeeValue>
     implements FeeValueService{
+    @Resource
+    private FeeValueMapper feeValueMapper;
 
+    /**
+     * 通过公寓id查询杂费列表
+     * @param id
+     * @return
+     */
+    @Override
+    public List<FeeValueVo> selectListByApartmentId(Long id) {
+        return feeValueMapper.selectListByApartmentId(id);
+    }
 }
 
 

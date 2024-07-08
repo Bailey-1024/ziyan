@@ -3,5 +3,16 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.msb.lease.web.app.mapper.LabelInfoMapper">
-
+  <!--查询标签信息列表-->
+    <select id="selectByListId" resultType="com.msb.lease.model.entity.LabelInfo">
+      SELECT * from label_info li LEFT JOIN room_label rl on li.id=rl.label_id and rl.is_deleted=0
+      where li.is_deleted=0  and rl.room_id=#{id}
+    </select>
+  <!--通过公寓id查询标签信息列表-->
+  <select id="selectByListIds" resultType="com.msb.lease.model.entity.LabelInfo">
+    SELECT *
+    from label_info li
+           LEFT JOIN apartment_label al on li.id = al.label_id and al.is_deleted=0
+    WHERE li.is_deleted=0 and al.apartment_id=#{id}
+  </select>
 </mapper>

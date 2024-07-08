@@ -28,7 +28,7 @@ private SystemPostService postService;
          //mybatis分页查询创建
          IPage<SystemPost> iPage=new Page<>(current,size);
          //调用Service层写好的方法
-         IPage<SystemPost> page = postService.pageByPost(iPage);
+         IPage<SystemPost> page = postService.page(iPage);
 
         return Result.ok(page);
     }
@@ -54,6 +54,7 @@ private SystemPostService postService;
     public Result<SystemPost> getById(@RequestParam Long id) {
         //调用Service层的通过id查询用户信息的方法
         SystemPost systemPost=postService.selectById(id);
+        System.out.println(systemPost);
         return Result.ok(systemPost);
     }
 

@@ -20,4 +20,25 @@ public interface ApartmentInfoService extends IService<ApartmentInfo> {
      * @param apartmentSubmitVo
      */
     void saveOrUpdateApartment(ApartmentSubmitVo apartmentSubmitVo);
+
+    /**
+     * 根据条件分页查询公寓列表
+     * @param apartmentItemVos
+     * @param queryVo
+     * @return
+     */
+    IPage<ApartmentItemVo> pageApartmentItemByQuery(Page<ApartmentItemVo> apartmentItemVos, ApartmentQueryVo queryVo);
+
+    /**
+     * 根据ID获取公寓的详细信息
+     * @param id
+     * @return
+     */
+    ApartmentDetailVo getApartmentDetailById(Long id);
+
+    /**
+     * 根据id删除公寓信息
+     * @param id
+     */
+    void removeApartmentById(Long id);
 }

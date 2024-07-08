@@ -1,7 +1,9 @@
 package com.msb.lease.web.app.service;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.msb.lease.model.entity.BrowsingHistory;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.msb.lease.web.app.vo.history.HistoryItemVo;
 
 /**
 * @author liubo
@@ -9,4 +11,9 @@ import com.baomidou.mybatisplus.extension.service.IService;
 * @createDate 2023-07-26 11:12:39
 */
 public interface BrowsingHistoryService extends IService<BrowsingHistory> {
+
+    //通过当前登录的用户id分页查询历史记录
+    IPage<HistoryItemVo> getHistoryItem(IPage<HistoryItemVo> page, long userId);
+
+    void saveHistory(long userId, Long id);
 }

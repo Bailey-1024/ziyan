@@ -47,7 +47,9 @@ public class JwtUtil {
 
     // 测试生成JWT令牌
     public static void main(String[] args) {
-        System.out.println(createToken(2L,"user"));
+
+        System.out.println(createToken(2L, "user"));
+
 
     }
 }

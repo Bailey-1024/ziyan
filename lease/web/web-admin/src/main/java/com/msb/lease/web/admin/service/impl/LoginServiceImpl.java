@@ -24,6 +24,9 @@ import org.springframework.util.StringUtils;
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
+import java.util.UUID;
+import java.util.concurrent.TimeUnit;
+
 @Service
 public class LoginServiceImpl implements LoginService {
 
@@ -92,5 +95,6 @@ public class LoginServiceImpl implements LoginService {
         systemUserInfoVo.setName(systemUser.getName());
         systemUserInfoVo.setAvatarUrl(systemUser.getAvatarUrl());
         return systemUserInfoVo;
+
     }
 }

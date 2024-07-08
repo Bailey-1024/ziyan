@@ -1,7 +1,12 @@
 package com.msb.lease.common.exception;
 
 import com.msb.lease.common.result.ResultCodeEnum;
+import lombok.Data;
 
+/**
+ * 自定义异常类
+ */
+@Data
 public class LeaseException extends RuntimeException {
     //异常状态码
     private Integer code;

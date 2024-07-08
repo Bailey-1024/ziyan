@@ -17,7 +17,8 @@ import org.springframework.stereotype.Service;
  * @createDate 2023-07-24 15:48:00
  */
 @Service
-public class LeaseAgreementServiceImpl extends ServiceImpl<LeaseAgreementMapper, LeaseAgreement>
+public class
+LeaseAgreementServiceImpl extends ServiceImpl<LeaseAgreementMapper, LeaseAgreement>
         implements LeaseAgreementService {
     @Resource
     private LeaseAgreementMapper mapper;

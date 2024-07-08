@@ -4,6 +4,8 @@ package com.msb.lease.web.admin.mapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.msb.lease.model.entity.RoomInfo;
+import com.msb.lease.web.admin.vo.room.RoomItemVo;
+import com.msb.lease.web.admin.vo.room.RoomQueryVo;
 
 /**
 * @author liubo
@@ -12,7 +14,13 @@ import com.msb.lease.model.entity.RoomInfo;
 * @Entity com.msb.lease.model.RoomInfo
 */
 public interface RoomInfoMapper extends BaseMapper<RoomInfo> {
-
+    /**
+     * 根据条件分页查询房间列表
+     * @param page
+     * @param queryVo
+     * @return
+     */
+    IPage<RoomItemVo> pageRoomItemByQuery(IPage<RoomItemVo> page, RoomQueryVo queryVo);
 }
 
 

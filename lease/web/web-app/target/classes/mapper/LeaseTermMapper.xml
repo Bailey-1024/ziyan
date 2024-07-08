@@ -4,4 +4,12 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.msb.lease.web.app.mapper.LeaseTermMapper">
 
+   <!--查询房租列表-->
+    <select id="selectListById" resultType="com.msb.lease.model.entity.LeaseTerm">
+        SELECT *
+        from lease_term lt
+                 LEFT JOIN room_lease_term rlt on lt.id = rlt.lease_term_id and rlt.is_deleted = 0
+        where lt.is_deleted = 0
+          and rlt.room_id = #{id}
+    </select>
 </mapper>
