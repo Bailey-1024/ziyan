@@ -27,7 +27,7 @@
     <update id="deleteByIdTo">
         update system_user set is_deleted=1 where id=#{id}
     </update>
-
+<!--根据用户名查询用户信息-->
     <select id="selectOneByUsername" resultType="com.msb.lease.model.entity.SystemUser">
         SELECT id,
                username,

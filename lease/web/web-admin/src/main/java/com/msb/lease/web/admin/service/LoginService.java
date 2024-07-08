@@ -11,7 +11,17 @@ public interface LoginService {
      */
     CaptchaVo getCaptcha();
 
+    /**
+     * 用户登录功能
+     * @param loginVo
+     * @return
+     */
     String login(LoginVo loginVo);
 
+    /**
+     * 查询用户登录信息
+     * @param userId
+     * @return
+     */
     SystemUserInfoVo getLoginUserInfo(Long userId);
 }

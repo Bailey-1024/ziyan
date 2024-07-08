@@ -43,7 +43,17 @@ public class LoginController {
     @Operation(summary = "获取登陆用户个人信息")
     @GetMapping("info")
     public Result<SystemUserInfoVo> info(@RequestHeader("access-token") String token) {
-        SystemUserInfoVo userInfoVo = loginService.getLoginUserInfo(LoginUserHolder.getLoginUser().getUserId());
+        //按理说，前端若想获取当前登录用户的个人信息，
+        // 需要传递当前用户的`id`到后端进行查询。
+        // 但是由于请求中携带的JWT中就包含了当前登录用户的`id`，
+        // 故请求个人信息时，就无需再传递`id`。
+
+        //通过前端传递的token--解析token--获取用户ID和用户名称
+        SystemUserInfoVo userInfoVo =
+                loginService.getLoginUserInfo(
+                        LoginUserHolder.getLoginUser().getUserId()
+                );
         return Result.ok(userInfoVo);
+
     }
 }

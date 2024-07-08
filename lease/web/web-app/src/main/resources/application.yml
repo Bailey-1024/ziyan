@@ -5,20 +5,45 @@ spring:
     type: com.zaxxer.hikari.HikariDataSource
     url: jdbc:mysql://localhost:3306/lease?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=GMT%2b8
     username: root
-    password: 123456
+    password: root
     hikari:
       connection-test-query: SELECT 1 # 自动检测连接
-      connection-timeout: 60000 #数据库连接超时时间,默认30秒
-      idle-timeout: 500000 #空闲连接存活最大时间，默认600000（10分钟）
-      max-lifetime: 540000 #此属性控制池中连接的最长生命周期，值0表示无限生命周期，默认1800000即30分钟
-      maximum-pool-size: 12 #连接池最大连接数，默认是10
-      minimum-idle: 10 #最小空闲连接数量
+      connection-timeout: 60000 # 数据库连接超时时间, 默认30秒
+      idle-timeout: 500000 # 空闲连接存活最大时间，默认600000（10分钟）
+      max-lifetime: 540000 # 此属性控制池中连接的最长生命周期，值0表示无限生命周期，默认1800000即30分钟
+      maximum-pool-size: 12 # 连接池最大连接数，默认是10
+      minimum-idle: 10 # 最小空闲连接数量
       pool-name: SPHHikariPool # 连接池名称
   jackson:
     time-zone: GMT+8
-springdoc:
-  default-flat-param-object: true
-#用于打印框架生成的sql语句，便于调试
+
+  data:
+    redis:
+      cluster:
+        max-redirects: 3
+        nodes: 192.168.170.139:6381,192.168.170.139:6382,192.168.170.139:6383,192.168.170.139:6384,192.168.170.139:6385,192.168.170.139:6386
+      lettuce:
+        pool:
+          max-active: 8
+          max-wait: -1ms
+          max-idle: 8
+          min-idle: 0
+        cluster:
+          refresh:
+            adaptive: true # 支持集群拓扑动态感应刷新，自适应拓扑刷新是否使用所有可用的更新
+            period: 2000
+
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+aliyun:
+  sms:
+    access-key-id: LTAI5tBLbeV179tAjZpzUPWe
+    access-key-secret: G486CiJ1Ru6cKNC5MaSG2yU0Rsl4bF
+    endpoint: dysmsapi.aliyuncs.com
+
+
+
+springdoc:
+  default-flat-param-object: true
