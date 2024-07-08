@@ -37,11 +37,11 @@ mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
-aliyun:
-  sms:
+#aliyun:
+#  sms:
 #    access-key-id: LTAI5tBLbeV179tAjZpzUPWe
 #    access-key-secret: G486CiJ1Ru6cKNC5MaSG2yU0Rsl4bF
-    endpoint: dysmsapi.aliyuncs.com
+#    endpoint: dysmsapi.aliyuncs.com
 
 
 
